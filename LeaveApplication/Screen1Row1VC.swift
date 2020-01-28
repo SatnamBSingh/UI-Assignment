@@ -13,6 +13,7 @@ class Screen1Row1VC: UIViewController {
     
     @IBOutlet var imageviewscreen1: UIImageView!
     
+    @IBOutlet var scrollview: UIScrollView!
     @IBAction func backbutton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
         //self.dismiss(animated: true, completion: nil)
@@ -20,6 +21,7 @@ class Screen1Row1VC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //scrollview.contentSize = CGSize(self.view.frame.width, self.view.frame.height+100)
 //        imageviewscreen1.layer.cornerRadius = imageviewscreen1.frame.size.height/2
 //        imageviewscreen1.layer.borderWidth = 0
 //        imageviewscreen1.layer.masksToBounds = true

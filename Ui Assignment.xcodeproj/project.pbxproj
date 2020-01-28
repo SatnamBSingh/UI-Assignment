@@ -17,6 +17,8 @@
 		E424A53523DEDC7800E24A76 /* Row1Col4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424A53423DEDC7800E24A76 /* Row1Col4VC.swift */; };
 		E49A92A123DAB2EF005D6E7F /* Screen1Row1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A92A023DAB2EF005D6E7F /* Screen1Row1VC.swift */; };
 		E49A92A323DAFB58005D6E7F /* Column1row2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A92A223DAFB58005D6E7F /* Column1row2VC.swift */; };
+		E4DBA30623E003F8000F0C61 /* Row2Col1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DBA30523E003F8000F0C61 /* Row2Col1VC.swift */; };
+		E4DBA30823E06CFF000F0C61 /* Row2col2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DBA30723E06CFF000F0C61 /* Row2col2VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		E424A53423DEDC7800E24A76 /* Row1Col4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row1Col4VC.swift; sourceTree = "<group>"; };
 		E49A92A023DAB2EF005D6E7F /* Screen1Row1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1Row1VC.swift; sourceTree = "<group>"; };
 		E49A92A223DAFB58005D6E7F /* Column1row2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Column1row2VC.swift; sourceTree = "<group>"; };
+		E4DBA30523E003F8000F0C61 /* Row2Col1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row2Col1VC.swift; sourceTree = "<group>"; };
+		E4DBA30723E06CFF000F0C61 /* Row2col2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row2col2VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +81,12 @@
 				6EA7653A231FB0D6001C94BB /* AppDelegate.swift */,
 				6EA7653C231FB0D6001C94BB /* ViewController.swift */,
 				6EA7653E231FB0D6001C94BB /* Main.storyboard */,
+				E4DBA30723E06CFF000F0C61 /* Row2col2VC.swift */,
 				E424A53423DEDC7800E24A76 /* Row1Col4VC.swift */,
 				E424A53223DEB8E400E24A76 /* Row1Col3VC.swift */,
 				E49A92A223DAFB58005D6E7F /* Column1row2VC.swift */,
 				E49A92A023DAB2EF005D6E7F /* Screen1Row1VC.swift */,
+				E4DBA30523E003F8000F0C61 /* Row2Col1VC.swift */,
 				6EA76541231FB0DF001C94BB /* Assets.xcassets */,
 				6EA76543231FB0DF001C94BB /* LaunchScreen.storyboard */,
 				6EA76546231FB0DF001C94BB /* Info.plist */,
@@ -161,11 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4DBA30623E003F8000F0C61 /* Row2Col1VC.swift in Sources */,
 				E49A92A323DAFB58005D6E7F /* Column1row2VC.swift in Sources */,
 				6EA7653D231FB0D6001C94BB /* ViewController.swift in Sources */,
 				6EA7653B231FB0D6001C94BB /* AppDelegate.swift in Sources */,
 				E424A53523DEDC7800E24A76 /* Row1Col4VC.swift in Sources */,
 				E49A92A123DAB2EF005D6E7F /* Screen1Row1VC.swift in Sources */,
+				E4DBA30823E06CFF000F0C61 /* Row2col2VC.swift in Sources */,
 				E424A53323DEB8E400E24A76 /* Row1Col3VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

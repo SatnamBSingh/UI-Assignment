@@ -9,38 +9,46 @@ import UIKit
 
 class Row1Col4VC: UIViewController {
    // var isHighLighted:Bool = false
-
     
+    
+    @IBOutlet var backview2: UIView!
     @IBOutlet var backview: UIView!
     @IBAction func backbutton(_ sender: Any) {
     navigationController?.popViewController(animated: true)
     }
     @IBAction func signupbutton(_ sender: Any) {
+        backview.isHidden = false
+        backview2.isHidden = true
     }
     @IBOutlet var signupbtnoutlet: UIButton!
     @IBOutlet var signinbtnoutlet: UIButton!
     @IBAction func signinbutton(_ sender: Any) {
+        backview2.isHidden = false
+        //backview.isHidden = true
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-navigationController?.navigationBar.isHidden = true
-//        buttonClicked(sender: signupbtnoutlet)
-//        buttonClicked(sender: signinbtnoutlet)
+        navigationController?.navigationBar.isHidden = true
+       // backview2.isHidden = true
+//        let tabbar1 = UITabBar()
+//        view.addSubview(tabbar1)
+//        tabbar1.translatesAutoresizingMaskIntoConstraints = false
+//        tabbar1.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0.0).isActive = true
+//        tabbar1.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0.0).isActive = true
+//        tabbar1.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 64).isActive = true
+//        let signup = UITabBarItem(title: "SIGN UP", image: nil, tag: 100)
+//         let signin = UITabBarItem(title: "SIGN IN", image: nil, tag: 100)
+//        tabbar1.setItems([signup, signin], animated: false)
+//        tabbar1.backgroundColor = UIColor.orange
+//        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Arial", size: 15)!], for: .normal)
+//       // FF6811
+//        tabbar1.backgroundColor = UIColor(red: 255, green: 104, blue: 17, alpha: 0)
+    
         // Do any additional setup after loading the view.
     }
-//        func buttonClicked(sender:UIButton)
-//        {
-//                if isHighLighted == false{
-//                    sender.isHighlighted = true;
-//                    isHighLighted = true
-//                }else{
-//                    sender.isHighlighted = false;
-//                    isHighLighted = false
-//                }
-//
-//        }
+
     /*
     // MARK: - Navigation
 

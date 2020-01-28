@@ -29,6 +29,14 @@ class ViewController: UIViewController{
         navigationController?.pushViewController(row1colmn4vc, animated: true)
     }
     
+    @IBAction func row2col1(_ sender: Any) {
+        let row2col1vc = self.storyboard?.instantiateViewController(withIdentifier: "Row2Col1VC") as! Row2Col1VC
+        navigationController?.pushViewController(row2col1vc, animated: true)
+    }
+    
+    
+    @IBAction func row2col2(_ sender: Any) {
+    }
     
     @IBOutlet weak var leadingContraint: NSLayoutConstraint!
     @IBOutlet var ViewBackground: UIView!
