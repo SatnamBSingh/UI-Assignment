@@ -15,36 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-       
-      //  let tbbarvc = UINavigationController.pushViewController(TabBarViewController)
-        
-        
-       /* let vc1 = UIViewController()
-        vc1.view.backgroundColor = UIColor.orange
-        vc1.tabBarItem.title = "Orange"
-        
-        
-        
-        let vc2 = UIViewController()
-        vc2.view.backgroundColor = UIColor.purple
-        vc2.tabBarItem.title = "Purple"
-        
-        
-        let vc3 = UIViewController()
-        vc3.view.backgroundColor = UIColor.red
-        vc3.tabBarItem.title = "Red"
-        
-        let vc4 = UIViewController()
-        vc4.view.backgroundColor = UIColor.green
-        vc4.tabBarItem.title = "Green"
-        
-        let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [vc1, vc2, vc3, vc4]
-        
-        
-        window?.rootViewController = tabBarController
-        window?.makeKeyAndVisible()
-        */
+        UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
 

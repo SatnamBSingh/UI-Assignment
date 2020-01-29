@@ -1,0 +1,6 @@
+framework module Pods_Ui_Assignment {
+  umbrella header "Pods-Ui Assignment-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,40 +8,39 @@ import UIKit
 
 class ViewController: UIViewController{
 
-    
     @IBAction func screen1row1btn(_ sender: Any) {
         let screen1vc = self.storyboard?.instantiateViewController(withIdentifier: "Screen1Row1VC") as! Screen1Row1VC
         navigationController?.pushViewController(screen1vc, animated: true)
     }
-    
     @IBAction func column1row2(_ sender: Any) {
         let colum1vc = self.storyboard?.instantiateViewController(withIdentifier: "Column1row2VC") as! Column1row2VC
         navigationController?.pushViewController(colum1vc, animated: true)
     }
-    
     @IBAction func row1column3(_ sender: Any) {
         let row1col3vc = self.storyboard?.instantiateViewController(withIdentifier: "Row1Col3VC") as! Row1Col3VC
         navigationController?.pushViewController(row1col3vc, animated: true)
     }
-    
     @IBAction func row1colymn4(_ sender: Any) {
         let row1colmn4vc = self.storyboard?.instantiateViewController(withIdentifier: "Row1Col4VC") as! Row1Col4VC
         navigationController?.pushViewController(row1colmn4vc, animated: true)
     }
-    
     @IBAction func row2col1(_ sender: Any) {
         let row2col1vc = self.storyboard?.instantiateViewController(withIdentifier: "Row2Col1VC") as! Row2Col1VC
         navigationController?.pushViewController(row2col1vc, animated: true)
     }
-    
-    
     @IBAction func row2col2(_ sender: Any) {
+        let row2col2vc = self.storyboard?.instantiateViewController(withIdentifier: "Row2col2VC") as! Row2col2VC
+        navigationController?.pushViewController(row2col2vc, animated: true)
     }
     
+    
+    @IBAction func row2col4(_ sender: Any) {
+        let row2col4vc = self.storyboard?.instantiateViewController(withIdentifier: "Row2col4VC") as! Row2col4VC
+        navigationController?.pushViewController(row2col4vc, animated: true)
+    }
     @IBOutlet weak var leadingContraint: NSLayoutConstraint!
     @IBOutlet var ViewBackground: UIView!
     var showMenu = true;
-    
     @IBAction func MenuBar(_ sender: UIBarButtonItem)
     {
         if(showMenu)
@@ -62,22 +61,15 @@ class ViewController: UIViewController{
         }
         showMenu = !showMenu
     }
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
        
     }
-    
-
 override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
 }
-
-
-
+    
 }
 
 

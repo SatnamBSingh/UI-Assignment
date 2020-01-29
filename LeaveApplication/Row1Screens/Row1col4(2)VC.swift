@@ -1,13 +1,17 @@
 //
-//  Row2col2VC.swift
+//  Row1col4(2)VC.swift
 //  Ui Assignment
 //
-//  Created by Captain on 28/01/20.
+//  Created by Captain on 29/01/20.
 //
 
 import UIKit
-
-class Row2col2VC: UIViewController {
+import XLPagerTabStrip
+class Row1col4_2_VC: UIViewController, IndicatorInfoProvider {
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return IndicatorInfo(title: "SIGN IN")
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
