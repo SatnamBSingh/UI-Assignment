@@ -11,6 +11,7 @@ class Row2col2VC: UIViewController {
 
     
     
+    @IBOutlet weak var uploadimage: UIImageView!
     @IBOutlet weak var signin: UIButton!
     @IBOutlet weak var signup: UIButton!
     @IBOutlet weak var backview2: UIView!
@@ -42,6 +43,8 @@ class Row2col2VC: UIViewController {
     @IBAction func signinbuttn(_ sender: Any) {
         backview1.isHidden = true
         backview2.isHidden = false
+        uploadimage.layer.cornerRadius = uploadimage.frame.width/2
+        uploadimage.clipsToBounds = true
         loadView()
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -51,6 +54,8 @@ class Row2col2VC: UIViewController {
         super.viewDidLoad()
         backview2.isHidden = true
    navigationController?.navigationBar.isHidden = true
+        uploadimage.layer.cornerRadius = uploadimage.frame.width/2
+        uploadimage.clipsToBounds = true
         var preferredStatusBarStyle: UIStatusBarStyle {
             return .lightContent
         }

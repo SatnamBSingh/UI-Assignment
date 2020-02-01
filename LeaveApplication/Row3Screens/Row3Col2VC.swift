@@ -1,24 +1,21 @@
 //
-//  Row2col4VC.swift
+//  Row3Col2VC.swift
 //  Ui Assignment
 //
-//  Created by Captain on 29/01/20.
+//  Created by Captain on 01/02/20.
 //
 
 import UIKit
 
-class Row2col4VC: UIViewController {
+class Row3Col2VC: UIViewController {
 
-    @IBOutlet weak var camimageview: UIImageView!
-    @IBAction func sidemenubutton(_ sender: Any) {
+    
+    @IBAction func backbutton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.isHidden = true
-        camimageview.layer.cornerRadius = camimageview.frame.width/2
-        //camimageview.layer.cornerRadius = 20
-        camimageview.clipsToBounds = true
+ navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
     

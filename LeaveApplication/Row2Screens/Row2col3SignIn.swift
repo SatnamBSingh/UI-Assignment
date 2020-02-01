@@ -1,24 +1,17 @@
 //
-//  Row2col4VC.swift
+//  Row2col3SignIn.swift
 //  Ui Assignment
 //
-//  Created by Captain on 29/01/20.
+//  Created by Captain on 30/01/20.
 //
 
 import UIKit
+import XLPagerTabStrip
+class Row2col3SignIn: UIViewController {
 
-class Row2col4VC: UIViewController {
-
-    @IBOutlet weak var camimageview: UIImageView!
-    @IBAction func sidemenubutton(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.isHidden = true
-        camimageview.layer.cornerRadius = camimageview.frame.width/2
-        //camimageview.layer.cornerRadius = 20
-        camimageview.clipsToBounds = true
+     navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -33,4 +26,11 @@ class Row2col4VC: UIViewController {
     }
     */
 
+}
+extension Row2col3SignIn: IndicatorInfoProvider{
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return IndicatorInfo(title: "SIGN IN")
+    }
+    
+    
 }

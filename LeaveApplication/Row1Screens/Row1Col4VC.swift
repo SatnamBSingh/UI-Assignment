@@ -19,6 +19,8 @@ class Row1Col4VC: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarBackgroundColor = #colorLiteral(red: 0.9915205836, green: 0.3439395428, blue: 0.1324428618, alpha: 1)
         settings.style.buttonBarItemTitleColor = UIColor.white
         settings.style.buttonBarItemBackgroundColor = UIColor.clear
+        //settings.style.buttonBarItemsShouldFillAvailableWidth = true
+
         super.viewDidLoad()
          navigationController?.navigationBar.isHidden = true
     }
@@ -29,6 +31,8 @@ class Row1Col4VC: ButtonBarPagerTabStripViewController {
         let vc2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Row1col4_2_VC") as! Row1col4_2_VC
 
         return [vc1,vc2]
+        
+        //return [Row1Col4signupVC(), Row1col4_2_VC()]
     }
     
 }

@@ -34,10 +34,34 @@ class ViewController: UIViewController{
     }
     
     
+    @IBAction func Row2Col3(_ sender: Any) {
+        let row3col3vc = self.storyboard?.instantiateViewController(withIdentifier: "Row2col3VC") as! Row2col3VC
+        navigationController?.pushViewController(row3col3vc, animated: true)
+    }
+    
+    
     @IBAction func row2col4(_ sender: Any) {
         let row2col4vc = self.storyboard?.instantiateViewController(withIdentifier: "Row2col4VC") as! Row2col4VC
         navigationController?.pushViewController(row2col4vc, animated: true)
     }
+    
+    
+    @IBAction func Row3Col1(_ sender: Any) {
+    let row3col1vc = self.storyboard?.instantiateViewController(withIdentifier: "Row3Col1VC") as! Row3Col1VC
+        navigationController?.pushViewController(row3col1vc, animated: true)
+    
+    }
+    
+    
+    @IBAction func Row3Col2(_ sender: Any) {
+    let row3col2vc = self.storyboard?.instantiateViewController(withIdentifier: "Row3Col2VC") as! Row3Col2VC
+        navigationController?.pushViewController(row3col2vc, animated: true)
+    
+    }
+    
+    
+    
+    
     @IBOutlet weak var leadingContraint: NSLayoutConstraint!
     @IBOutlet var ViewBackground: UIView!
     var showMenu = true;
@@ -45,6 +69,7 @@ class ViewController: UIViewController{
     {
         if(showMenu)
         {
+        ViewBackground.isHidden = false
             leadingContraint.constant = -240
             ViewBackground.backgroundColor = UIColor.white
             UIView.animate(withDuration: 0.5) {
@@ -63,8 +88,10 @@ class ViewController: UIViewController{
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+       ViewBackground.isHidden = true
     }
+    
+    
 override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
