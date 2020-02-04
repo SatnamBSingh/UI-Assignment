@@ -39,6 +39,9 @@ class Row3Col2VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
  navigationController?.navigationBar.isHidden = true
+        setupUI()
+        originalSignInViewRect = signinview.frame
+        originalSignUpViewRect = signupview.frame
         // Do any additional setup after loading the view.
     }
     
@@ -47,19 +50,10 @@ class Row3Col2VC: UIViewController {
         signinview.layer.shadowOffset = CGSize(width: 1, height: 1)
         signinview.layer.shadowOpacity = 1
         
-        //UIApplication.shared.statusBarView?.backgroundColor = UIColor.appStatusBarRed
+        setupforsigninview()
+        setupSignUpView()
         
-        
-       // containerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 667)
-        //self.scrollView.addSubview(containerView)
-        
-        //backgroundImageView.frame = containerView.frame
-        
-       setupforsigninview()
-       // signinview.frame = CGRect(x: 9, y: 70, width: self.containerView.frame.width-2*9, height: 475)
-      //  setupSignUpView()
-        
-      //  aspectRatio = credentialsView.frame.width/credentialsView.frame.height
+        aspectRatio = signupview.frame.width/signupview.frame.height
         
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panRecognizer(_:)))
         let panGesture2 = UIPanGestureRecognizer(target: self, action: #selector(panRecognizer(_:)))
@@ -85,7 +79,15 @@ class Row3Col2VC: UIViewController {
         self.signupwithfbbttn.frame = CGRect(x: self.signupwithfbbttn.frame.origin.x, y: self.signinview.frame.height-57, width: self.signinview.frame.width-26, height: self.signupwithfbbttn.frame.height)
     }
     
-    
+    func setupSignUpView(){
+        fullnametxtfld.frame = CGRect(x: 13, y: 63, width: signupview.frame.width-2*13, height: 44)
+        lastnametxtfld.frame = CGRect(x: 13, y: 120, width: signupview.frame.width-2*13, height: 44)
+        emailtxtfld.frame = CGRect(x: 13, y: 177, width: signupview.frame.width-2*13, height: 44)
+        paswordtxtfld.frame = CGRect(x: 13, y: 234, width: signupview.frame.width-2*13, height: 44)
+        reenterpsswordtxtfld.frame = CGRect(x: 13, y: 291, width: signupview.frame.width-2*13, height: 44)
+        createanaccountbttn.frame = CGRect(x: 13, y: 361, width: signupview.frame.width-2*13, height: 44)
+        signupwithfbbttn.frame = CGRect(x: 13, y: 418, width: signupview.frame.width-2*13, height: 44)
+    }
     
     @objc func panRecognizer(_ sender: UIPanGestureRecognizer){
         
@@ -93,10 +95,163 @@ class Row3Col2VC: UIViewController {
         let intiallPosY2 = self.signinview.frame.origin.y
         let translation = sender.translation(in: self.view)
         
-        
+        switch sender.state {
+        case .began, .changed:
+            
+            DispatchQueue.main.async {
+                
+                    print(initialPosY < (initialPosY + translation.y))
+                    if sender.view!.tag == 0 {
+                
+                
+                        self.signinview.frame = CGRect(x: self.signinview.frame.origin.x - (self.signinview.frame.origin.x/self.signinview.frame.origin.y)*translation.y*30/475, y: self.signinview.frame.origin.y + translation.y*30/475, width: (self.signinview.frame.height + translation.y*30/475)*(self.originalSignInViewRect?.width)!/(self.originalSignInViewRect?.height)!, height: self.signinview.frame.height+translation.y*30/475)
+                        
+                        self.signupview.frame.origin.y += translation.y
+                        
+                        self.signinusername.frame = CGRect(x: self.signinusername.frame.origin.x, y: self.signinusername.frame.origin.y+translation.y/2*30/475, width: self.signinview.frame.width-26, height: self.signinusername.frame.height)
+                        
+                        self.signinpassword.frame = CGRect(x: self.signinpassword.frame.origin.x, y: self.signinpassword.frame.origin.y+translation.y/2*30/475, width: self.signinview.frame.width-26, height: self.signinpassword.frame.height)
+                        
+                        self.remembermelbl.frame = CGRect(x: 11.5, y: 290+translation.y*30/475, width: 17, height: 17)
+                        self.remembermelbl.frame = CGRect(x: 32.5, y: 288+translation.y*30/475, width: 112, height: 21)
+                        self.forgotpasswordlbl.frame = CGRect(x: self.signinpassword.frame.origin.x+self.signinpassword.frame.width-137, y: 288+translation.y*30/475, width: 137, height: 21)
+                        
+                        self.signinButton.frame = CGRect(x: self.signinButton.frame.origin.x, y: self.signinview.frame.height-114, width: self.signinview.frame.width-26, height: self.signinButton.frame.height)
+                        
+                        self.signupwithfbbttn.frame = CGRect(x: self.signupwithfbbttn.frame.origin.x, y: self.signinview.frame.height-57, width: self.signinview.frame.width-26, height: self.signupwithfbbttn.frame.height)
+                        
+                
+                        
+                        if initialPosY < (initialPosY + translation.y){
+                            self.signinusername.alpha = 1
+                            self.signinButton.alpha = 1
+                            self.signinpassword.alpha = 1
+                            
+                            self.signinview.layoutIfNeeded()
+                            self.signinview.backgroundColor = self.signupview.backgroundColor
+                            
+                        }
+                        if initialPosY > (initialPosY + translation.y){
+                            
+                            self.signupview.alpha += 0.3
+                            self.signinusername.alpha -= 0.25
+                            self.signinButton.alpha -= 0.25
+                            self.signinpassword.alpha -= 0.1
+                            self.signinview.layoutIfNeeded()
+                            self.signinview.backgroundColor = UIColor(red: 237/255, green: 238/255, blue: 239/255, alpha: 1)
+                        }
+                        
+                        sender.setTranslation(CGPoint.zero, in: self.view)
+                        
+                        
+                    }else{
+                        self.signinview.frame.origin.y += translation.y
+                        self.signupview.frame = CGRect(x: self.signupview.frame.origin.x - (self.signupview.frame.origin.x/self.signupview.frame.origin.y)*translation.y*30/475, y: self.signupview.frame.origin.y + translation.y*30/475, width: (self.signupview.frame.height + translation.y*30/475)*(self.originalSignInViewRect?.width)!/(self.originalSignInViewRect?.height)!, height: self.signupview.frame.height+translation.y*30/475)
+                        self.setupSignUpView()
+                        sender.setTranslation(CGPoint.zero, in: self.view)
+                }
+            }
+            
+            
+            break
+        case .ended:
+            DispatchQueue.main.async {
+                
+                if sender.view!.tag == 0 {
+                    
+                    if (self.signupview.frame.origin.y - (self.originalSignUpViewRect?.origin.y)! >= 100)  {
+                        
+                        
+                        UIView.animate(withDuration: 0.6, delay: 0, options: [.curveEaseIn], animations: {
+                            
+                            self.signinview.frame = CGRect(x: (self.originalSignUpViewRect?.origin.x)!, y: (self.originalSignUpViewRect?.origin.y)!, width: (self.originalSignUpViewRect?.width)!, height: (self.originalSignUpViewRect?.height)!)
+                            self.signinview.frame.origin.y += (self.originalSignUpViewRect!.origin.y-self.signinview.frame.origin.y)
+                            
+                            
+                            self.signinusername.frame = CGRect(x: 13, y: 170+15, width: self.signinview.frame.width-26, height: 44)
+                            
+                            self.signinpassword.frame = CGRect(x: 13, y: 227+15, width: self.signinview.frame.width-26, height: 44)
+                            
+                            self.remembermelbl.frame = CGRect(x: 11.5, y: 290+15, width: 17, height: 17)
+                            self.remembermelbl.frame = CGRect(x: 32.5, y: 288+15, width: 112, height: 21)
+                            self.forgotpasswordlbl.frame = CGRect(x: self.signinpassword.frame.origin.x+self.signinpassword.frame.width-137, y: 288+15, width: 137, height: 21)
+                            
+                            self.signinButton.frame = CGRect(x: self.signinButton.frame.origin.x, y: self.signinview.frame.height-114, width: self.signinview.frame.width-26, height: self.signinButton.frame.height)
+                            self.signupwithfbbttn.frame = CGRect(x: self.signupwithfbbttn.frame.origin.x, y: self.signinview.frame.height-57, width: self.signinview.frame.width-26, height: self.signupwithfbbttn.frame.height)
+                            
+                        }, completion: { (action) in
+                            self.signupview.alpha = 0
+                            UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
+                                self.signupview.backgroundColor = UIColor(red: 237/255, green: 238/255, blue: 239/255, alpha: 1)
+                                
+                                self.signinview.layoutIfNeeded()
+                            }, completion: { (action) in
+                                self.signupview.frame = self.originalSignInViewRect!
+                                self.setupSignUpView()
+                                UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
+                                    self.signupview.alpha = 1
+                                    
+                                }, completion: nil)
+                            })
+                        })
+                        
+                    }
+                    else{
+                        self.signinview.frame = self.originalSignInViewRect!
+                        self.signupview.frame = self.originalSignUpViewRect!
+                        self.signupview.alpha = 1
+                        
+                        
+                        self.signinusername.alpha = 0
+                        self.signinButton.alpha = 0
+                        self.signinpassword.alpha = 0
+                        self.signinview.layoutIfNeeded()
+                    }
+                    
+                    self.signinusername.frame = CGRect(x: self.signinusername.frame.origin.x, y: self.signinusername.frame.origin.y, width: self.signinview.frame.width-26, height: self.signinusername.frame.height)
+                    self.signinpassword.frame = CGRect(x: self.signinpassword.frame.origin.x, y: self.signinpassword.frame.origin.y, width: self.signinview.frame.width-26, height: self.signinpassword.frame.height)
+                    self.signinButton.frame = CGRect(x: self.signinButton.frame.origin.x, y: self.signinButton.frame.origin.y, width: self.signinview.frame.width-26, height: self.signinButton.frame.height)
+                }else{
+                    if (self.signinview.frame.origin.y - (self.originalSignInViewRect?.origin.y)! >= 100)  {
+                        
+                        UIView.animate(withDuration: 0.6, delay: 0, options: [.curveEaseInOut], animations: {
+                            self.signupview.frame = CGRect(x: (self.originalSignUpViewRect?.origin.x)!, y: (self.originalSignUpViewRect?.origin.y)!, width: (self.originalSignUpViewRect?.width)!, height: (self.originalSignUpViewRect?.height)!)
+                            self.signupview.frame.origin.y += (self.originalSignUpViewRect!.origin.y-self.signupview.frame.origin.y)
+                            self.setupSignUpView()
+                        }, completion: { (action) in
+                            
+                            self.signinview.alpha = 0
+                            
+                            UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
+                                self.signupview.backgroundColor = UIColor.white
+                                
+                            }, completion: { (action) in
+                                self.setupSignUpView()
+                                UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
+                                    self.signupview.alpha = 1
+                                    
+                                }, completion: nil)
+                                
+                            })
+                        })
+                        
+                    }
+                }
+            }
+           
+            break
+        default:
+            break
+        }
+    }
+
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
     }
     
-    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        return true
+    }
     /*
 
     // MARK: - Navigation

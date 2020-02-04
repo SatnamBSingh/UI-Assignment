@@ -20,6 +20,9 @@
 		E424A53323DEB8E400E24A76 /* Row1Col3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424A53223DEB8E400E24A76 /* Row1Col3VC.swift */; };
 		E424A53523DEDC7800E24A76 /* Row1Col4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424A53423DEDC7800E24A76 /* Row1Col4VC.swift */; };
 		E42C049023E59F7C0036846D /* Row3Col2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42C048F23E59F7C0036846D /* Row3Col2VC.swift */; };
+		E432A80C23E94ED40008ADD8 /* Row3Col3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E432A80B23E94ED40008ADD8 /* Row3Col3VC.swift */; };
+		E432A80E23E9764B0008ADD8 /* Row3Col3SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E432A80D23E9764B0008ADD8 /* Row3Col3SignupVC.swift */; };
+		E432A81023E9938A0008ADD8 /* Row3Col4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E432A80F23E9938A0008ADD8 /* Row3Col4VC.swift */; };
 		E440A2A923E2888600B7AF63 /* Row2col3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440A2A823E2888600B7AF63 /* Row2col3VC.swift */; };
 		E440A2AB23E28AFE00B7AF63 /* Row2col3SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440A2AA23E28AFE00B7AF63 /* Row2col3SignUp.swift */; };
 		E440A2AD23E28B2100B7AF63 /* Row2col3SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440A2AC23E28B2100B7AF63 /* Row2col3SignIn.swift */; };
@@ -47,6 +50,9 @@
 		E424A53223DEB8E400E24A76 /* Row1Col3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row1Col3VC.swift; sourceTree = "<group>"; };
 		E424A53423DEDC7800E24A76 /* Row1Col4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row1Col4VC.swift; sourceTree = "<group>"; };
 		E42C048F23E59F7C0036846D /* Row3Col2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row3Col2VC.swift; sourceTree = "<group>"; };
+		E432A80B23E94ED40008ADD8 /* Row3Col3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row3Col3VC.swift; sourceTree = "<group>"; };
+		E432A80D23E9764B0008ADD8 /* Row3Col3SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row3Col3SignupVC.swift; sourceTree = "<group>"; };
+		E432A80F23E9938A0008ADD8 /* Row3Col4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row3Col4VC.swift; sourceTree = "<group>"; };
 		E440A2A823E2888600B7AF63 /* Row2col3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row2col3VC.swift; sourceTree = "<group>"; };
 		E440A2AA23E28AFE00B7AF63 /* Row2col3SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row2col3SignUp.swift; sourceTree = "<group>"; };
 		E440A2AC23E28B2100B7AF63 /* Row2col3SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row2col3SignIn.swift; sourceTree = "<group>"; };
@@ -156,6 +162,9 @@
 			children = (
 				E4D6747F23E549EF00AB841C /* Row3Col1VC.swift */,
 				E42C048F23E59F7C0036846D /* Row3Col2VC.swift */,
+				E432A80B23E94ED40008ADD8 /* Row3Col3VC.swift */,
+				E432A80D23E9764B0008ADD8 /* Row3Col3SignupVC.swift */,
+				E432A80F23E9938A0008ADD8 /* Row3Col4VC.swift */,
 			);
 			path = Row3Screens;
 			sourceTree = "<group>";
@@ -290,13 +299,16 @@
 				E440A2AB23E28AFE00B7AF63 /* Row2col3SignUp.swift in Sources */,
 				E4D6748023E549EF00AB841C /* Row3Col1VC.swift in Sources */,
 				E440A2AD23E28B2100B7AF63 /* Row2col3SignIn.swift in Sources */,
+				E432A80E23E9764B0008ADD8 /* Row3Col3SignupVC.swift in Sources */,
 				E4107D3823E147C50052C08F /* Row1Col4signupVC.swift in Sources */,
 				6EA7653B231FB0D6001C94BB /* AppDelegate.swift in Sources */,
 				E424A53523DEDC7800E24A76 /* Row1Col4VC.swift in Sources */,
+				E432A80C23E94ED40008ADD8 /* Row3Col3VC.swift in Sources */,
 				E4107D4623E19EEB0052C08F /* Row2col4VC.swift in Sources */,
 				E49A92A123DAB2EF005D6E7F /* Screen1Row1VC.swift in Sources */,
 				E4DBA30823E06CFF000F0C61 /* Row2col2VC.swift in Sources */,
 				E424A53323DEB8E400E24A76 /* Row1Col3VC.swift in Sources */,
+				E432A81023E9938A0008ADD8 /* Row3Col4VC.swift in Sources */,
 				E4107D3A23E17E940052C08F /* Row1col4(2)VC.swift in Sources */,
 				E440A2A923E2888600B7AF63 /* Row2col3VC.swift in Sources */,
 				E42C049023E59F7C0036846D /* Row3Col2VC.swift in Sources */,

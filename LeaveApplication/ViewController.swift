@@ -61,6 +61,14 @@ class ViewController: UIViewController{
     
     
     @IBAction func Row3Col3(_ sender: Any) {
+        let row3col3vc = self.storyboard?.instantiateViewController(withIdentifier: "Row3Col3VC") as! Row3Col3VC
+        navigationController?.pushViewController(row3col3vc, animated: true)
+    }
+    
+    
+    @IBAction func Row3Col4Vc(_ sender: Any) {
+        let row3col4vc = self.storyboard?.instantiateViewController(withIdentifier: "Row3Col4VC") as! Row3Col4VC
+        navigationController?.pushViewController(row3col4vc, animated: true)
     }
     
     

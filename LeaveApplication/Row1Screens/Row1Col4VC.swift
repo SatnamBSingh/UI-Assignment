@@ -27,12 +27,12 @@ class Row1Col4VC: ButtonBarPagerTabStripViewController {
 
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
 
-//        let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Row1Col4signupVC") as! Row1Col4signupVC
-//        let vc2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Row1col4_2_VC") as! Row1col4_2_VC
-//
-//        return [vc1,vc2]
+        let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Row1Col4signupVC") as! Row1Col4signupVC
+        let vc2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Row1col4_2_VC") as! Row1col4_2_VC
+
+        return [vc1,vc2]
         
-        return [Row1Col4signupVC(), Row1col4_2_VC()]
+       // return [Row1Col4signupVC(), Row1col4_2_VC()]
     }
     
 }
