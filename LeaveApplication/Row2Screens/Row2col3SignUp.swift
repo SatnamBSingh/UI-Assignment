@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import XLPagerTabStrip
 class Row2col3SignUp: UIViewController {
 
     override func viewDidLoad() {
@@ -26,12 +25,4 @@ class Row2col3SignUp: UIViewController {
     }
     */
 
-}
-extension Row2col3SignUp: IndicatorInfoProvider {
-    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        return IndicatorInfo(title: "SIGN UP")
-    }
-    
-    
-    
 }

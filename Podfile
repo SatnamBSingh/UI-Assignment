@@ -6,5 +6,7 @@ target 'Ui Assignment' do
   use_frameworks!
 
   # Pods for Ui Assignment
- pod 'XLPagerTabStrip', '~> 9.0'
+use_frameworks!
+pod 'CarbonKit'
+
 end

@@ -72,6 +72,22 @@ class ViewController: UIViewController{
     }
     
     
+    
+    @IBAction func Row4Col1Vc(_ sender: Any) {
+        let row4col1vc = self.storyboard?.instantiateViewController(withIdentifier: "Row4Col1VC") as! Row4Col1VC
+        navigationController?.pushViewController(row4col1vc, animated: true)
+    }
+    
+    
+    @IBAction func Row4col2VC(_ sender: Any) {
+        let row4col2vc = self.storyboard?.instantiateViewController(withIdentifier: "Row4Col2MainVC") as! Row4Col2MainVC
+        navigationController?.pushViewController(row4col2vc, animated: true)
+    }
+    
+    
+    
+    
+    
     @IBOutlet weak var leadingContraint: NSLayoutConstraint!
     @IBOutlet var ViewBackground: UIView!
     var showMenu = true;

@@ -14,6 +14,10 @@ class Row3Col4VC: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func signUpButton(_ sender: Any) {
+        let signupscreen = self.storyboard?.instantiateViewController(withIdentifier: "Row3Col3SignupVC") as! Row3Col3SignupVC
+        navigationController?.pushViewController(signupscreen, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 navigationController?.navigationBar.isHidden = true

@@ -1,16 +1,16 @@
 //
-//  Row2col3SignIn.swift
+//  Row4Col2SignUpVC.swift
 //  Ui Assignment
 //
-//  Created by Captain on 30/01/20.
+//  Created by Captain on 05/02/20.
 //
 
 import UIKit
-class Row2col3SignIn: UIViewController {
+class Row4Col2SignUpVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-     navigationController?.navigationBar.isHidden = true
+
         // Do any additional setup after loading the view.
     }
     
@@ -26,3 +26,4 @@ class Row2col3SignIn: UIViewController {
     */
 
 }
+

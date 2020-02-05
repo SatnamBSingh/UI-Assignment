@@ -1,16 +1,20 @@
 //
-//  Row2col3SignIn.swift
+//  Row4Col2SignInVC.swift
 //  Ui Assignment
 //
-//  Created by Captain on 30/01/20.
+//  Created by Captain on 05/02/20.
 //
 
 import UIKit
-class Row2col3SignIn: UIViewController {
+class Row4Col2SignInVC: UIViewController {
 
+    @IBOutlet weak var signupButtonOutlet: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-     navigationController?.navigationBar.isHidden = true
+        signupButtonOutlet.backgroundColor = UIColor.white
+        signupButtonOutlet.layer.shadowColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        signupButtonOutlet.layer.shadowOffset = CGSize(width: 1, height: 1)
+        signupButtonOutlet.layer.shadowOpacity = 1.0
         // Do any additional setup after loading the view.
     }
     
@@ -25,4 +29,8 @@ class Row2col3SignIn: UIViewController {
     }
     */
 
+
+
+    
+    
 }

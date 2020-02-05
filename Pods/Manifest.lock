@@ -1,16 +1,16 @@
 PODS:
-  - XLPagerTabStrip (9.0.0)
+  - CarbonKit (2.3.1)
 
 DEPENDENCIES:
-  - XLPagerTabStrip (~> 9.0)
+  - CarbonKit
 
 SPEC REPOS:
   trunk:
-    - XLPagerTabStrip
+    - CarbonKit
 
 SPEC CHECKSUMS:
-  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
+  CarbonKit: b60e24dbdb47179990d5e074efa87ab819c8de98
 
-PODFILE CHECKSUM: 25eb1a58a1d4e34eff86fb7e4a711659eb90683e
+PODFILE CHECKSUM: fa1d35ac8589d6223a1efa2be0cc75fc786d14b2
 
 COCOAPODS: 1.8.4

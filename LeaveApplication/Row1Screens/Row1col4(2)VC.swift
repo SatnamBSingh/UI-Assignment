@@ -6,12 +6,14 @@
 //
 
 import UIKit
-import XLPagerTabStrip
-class Row1col4_2_VC: UIViewController {
+import CarbonKit
+class Row1col4_2_VC: UIViewController{
+//    func carbonTabSwipeNavigation(_ carbonTabSwipeNavigation: CarbonTabSwipeNavigation, viewControllerAt index: UInt) -> UIViewController {
+//        let vc2 = self.storyboard?.instantiateViewController(withIdentifier: "Row1col4_2_VC") as! Row1col4_2_VC
+//        return Row1col4_2_VC()
+//    }
+    
 
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,9 +31,4 @@ class Row1col4_2_VC: UIViewController {
      }
      */
     
-}
-extension Row1col4_2_VC: IndicatorInfoProvider{
-    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        return IndicatorInfo(title: "SIGN IN")
-    }
 }

@@ -6,21 +6,47 @@
 //
 
 import UIKit
-import XLPagerTabStrip
-class Row2col3VC: ButtonBarPagerTabStripViewController {
+import CarbonKit
+class Row2col3VC: UIViewController, CarbonTabSwipeNavigationDelegate {
+   
+    
+    func carbonTabSwipeNavigation(_ carbonTabSwipeNavigation: CarbonTabSwipeNavigation, viewControllerAt index: UInt) -> UIViewController {
+        switch index {
+        case 0:
+            return self.storyboard?.instantiateViewController(withIdentifier: "Row2col3SignUp") as! Row2col3SignUp
+        case 1:
+            return self.storyboard?.instantiateViewController(withIdentifier: "Row2col3SignIn") as! Row2col3SignIn
+        default:
+            return self.storyboard?.instantiateViewController(withIdentifier: "Row2col3SignIn") as! Row2col3SignIn
+            
+        }
+    }
+    
 
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
     
-    @IBOutlet weak var buttonbarview: ButtonBarView!
     override func viewDidLoad() {
-        settings.style.selectedBarHeight = 5
-        settings.style.selectedBarBackgroundColor = UIColor.white
-        settings.style.buttonBarBackgroundColor = #colorLiteral(red: 0.9915205836, green: 0.3439395428, blue: 0.1324428618, alpha: 1)
-        settings.style.buttonBarItemTitleColor = UIColor.white
-        settings.style.buttonBarItemBackgroundColor = UIColor.clear
+
         super.viewDidLoad()
+        let displays = ["SIGN UP", "SIGN IN"]
+        let carbonswipenavigation = CarbonTabSwipeNavigation(items: displays, delegate: self)
+        carbonswipenavigation.insert(intoRootViewController: self)
+        carbonswipenavigation.setTabBarHeight(70)
+        //below for bar color&Height
+        carbonswipenavigation.setIndicatorColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
+        carbonswipenavigation.setIndicatorHeight(7)
+        carbonswipenavigation.toolbar.barTintColor = #colorLiteral(red: 0.9915205836, green: 0.3439395428, blue: 0.1324428618, alpha: 1)
+        carbonswipenavigation.toolbar.isTranslucent = false
+        // carbonswipenavigation.toolbar.barPosition
+        // carbonswipenavigation.toolbar.backgroundColor = UIColor.clear
+        carbonswipenavigation.carbonSegmentedControl?.setWidth(200, forSegmentAt: 0)
+        carbonswipenavigation.carbonSegmentedControl?.setWidth(200, forSegmentAt: 1)
+        //below for unselected text the color is white
+        carbonswipenavigation.setNormalColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+        carbonswipenavigation.setSelectedColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
+        carbonswipenavigation.toolbar.backgroundImage(forToolbarPosition: .any, barMetrics: .default)
         navigationController?.navigationBar.isHidden  = true
         // Do any additional setup after loading the view.
     }
@@ -35,11 +61,5 @@ class Row2col3VC: ButtonBarPagerTabStripViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-        
-        let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Row2col3SignUp") as! Row2col3SignUp
-        let vc2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Row2col3SignIn") as! Row2col3SignIn
-        
-        return [vc1,vc2]
-    }
+   
 }

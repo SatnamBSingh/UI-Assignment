@@ -9,6 +9,7 @@ import UIKit
 
 class Row2col4VC: UIViewController {
 
+    @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var camimageview: UIImageView!
     @IBAction func sidemenubutton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
@@ -17,8 +18,12 @@ class Row2col4VC: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
         camimageview.layer.cornerRadius = camimageview.frame.width/2
-        //camimageview.layer.cornerRadius = 20
         camimageview.clipsToBounds = true
+        
+        mainView.backgroundColor = UIColor.white
+        mainView.layer.shadowColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        mainView.layer.shadowOffset = CGSize(width: 1, height: 1)
+        mainView.layer.shadowOpacity = 1.0
         // Do any additional setup after loading the view.
     }
     

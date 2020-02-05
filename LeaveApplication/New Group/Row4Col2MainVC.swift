@@ -1,41 +1,32 @@
 //
-//  Row1Col4VC.swift
+//  Row4Col2MainVC.swift
 //  Ui Assignment
 //
-//  Created by Captain on 27/01/20.
+//  Created by Captain on 05/02/20.
 //
 
 import UIKit
 import CarbonKit
-class Row1Col4VC: UIViewController, CarbonTabSwipeNavigationDelegate {
-    
-    
+class Row4Col2MainVC: UIViewController, CarbonTabSwipeNavigationDelegate{
     func carbonTabSwipeNavigation(_ carbonTabSwipeNavigation: CarbonTabSwipeNavigation, viewControllerAt index: UInt) -> UIViewController {
         switch index {
-        case 0:
-            return self.storyboard?.instantiateViewController(withIdentifier: "Row1Col4signupVC") as! Row1Col4signupVC
-        case 1:
-            return self.storyboard?.instantiateViewController(withIdentifier: "Row1col4_2_VC") as! Row1col4_2_VC
+        case 0 :
+            return  self.storyboard?.instantiateViewController(withIdentifier: "Row4Col2SignUpVC") as! Row4Col2SignUpVC
+        case 1 :
+            return self.storyboard?.instantiateViewController(withIdentifier: "Row4Col2SignInVC") as! Row4Col2SignInVC
         default:
-            return self.storyboard?.instantiateViewController(withIdentifier: "Row1col4_2_VC") as! Row1col4_2_VC
+            return  self.storyboard?.instantiateViewController(withIdentifier: "Row4Col2SignUpVC") as! Row4Col2SignUpVC
 
         }
     }
     
-   
-    @IBOutlet weak var barButtonView: UIView!
-    override var preferredStatusBarStyle: UIStatusBarStyle{
-        return .lightContent
+
+    @IBAction func backButton(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
+    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        self.navigationController!.navigationBar.isTranslucent = false
-        self.navigationController!.navigationBar.isTranslucent = false
-        self.navigationController!.navigationBar.tintColor = UIColor.white
-       // self.navigationController!.navigationBar.barTintColor = color
-        self.navigationController!.navigationBar.barStyle = .blackTranslucent
-        
         let displays = ["SIGN UP", "SIGN IN"]
         let carbonswipenavigation = CarbonTabSwipeNavigation(items: displays, delegate: self)
         carbonswipenavigation.insert(intoRootViewController: self)
@@ -45,17 +36,27 @@ class Row1Col4VC: UIViewController, CarbonTabSwipeNavigationDelegate {
         carbonswipenavigation.setIndicatorHeight(7)
         carbonswipenavigation.toolbar.barTintColor = #colorLiteral(red: 0.9915205836, green: 0.3439395428, blue: 0.1324428618, alpha: 1)
         carbonswipenavigation.toolbar.isTranslucent = false
-       // carbonswipenavigation.toolbar.barPosition
-       // carbonswipenavigation.toolbar.backgroundColor = UIColor.clear
+        // carbonswipenavigation.toolbar.barPosition
+        // carbonswipenavigation.toolbar.backgroundColor = UIColor.clear
         carbonswipenavigation.carbonSegmentedControl?.setWidth(200, forSegmentAt: 0)
         carbonswipenavigation.carbonSegmentedControl?.setWidth(200, forSegmentAt: 1)
         //below for unselected text the color is white
         carbonswipenavigation.setNormalColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
         carbonswipenavigation.setSelectedColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
         carbonswipenavigation.toolbar.backgroundImage(forToolbarPosition: .any, barMetrics: .default)
-
-         navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
+        // Do any additional setup after loading the view.
     }
+    
 
-   
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+    
 }

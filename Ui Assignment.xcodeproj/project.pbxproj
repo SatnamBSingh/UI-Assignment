@@ -17,6 +17,9 @@
 		E4107D3823E147C50052C08F /* Row1Col4signupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4107D3723E147C50052C08F /* Row1Col4signupVC.swift */; };
 		E4107D3A23E17E940052C08F /* Row1col4(2)VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4107D3923E17E940052C08F /* Row1col4(2)VC.swift */; };
 		E4107D4623E19EEB0052C08F /* Row2col4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4107D4523E19EEB0052C08F /* Row2col4VC.swift */; };
+		E41EF2CD23EA9C9A00151576 /* Row4Col2MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41EF2CC23EA9C9A00151576 /* Row4Col2MainVC.swift */; };
+		E41EF2CF23EA9F4F00151576 /* Row4Col2SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41EF2CE23EA9F4F00151576 /* Row4Col2SignUpVC.swift */; };
+		E41EF2D123EAA2F300151576 /* Row4Col2SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41EF2D023EAA2F300151576 /* Row4Col2SignInVC.swift */; };
 		E424A53323DEB8E400E24A76 /* Row1Col3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424A53223DEB8E400E24A76 /* Row1Col3VC.swift */; };
 		E424A53523DEDC7800E24A76 /* Row1Col4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424A53423DEDC7800E24A76 /* Row1Col4VC.swift */; };
 		E42C049023E59F7C0036846D /* Row3Col2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42C048F23E59F7C0036846D /* Row3Col2VC.swift */; };
@@ -26,6 +29,7 @@
 		E440A2A923E2888600B7AF63 /* Row2col3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440A2A823E2888600B7AF63 /* Row2col3VC.swift */; };
 		E440A2AB23E28AFE00B7AF63 /* Row2col3SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440A2AA23E28AFE00B7AF63 /* Row2col3SignUp.swift */; };
 		E440A2AD23E28B2100B7AF63 /* Row2col3SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440A2AC23E28B2100B7AF63 /* Row2col3SignIn.swift */; };
+		E469911923EA747500645DEF /* Row4Col1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E469911823EA747500645DEF /* Row4Col1VC.swift */; };
 		E49A92A123DAB2EF005D6E7F /* Screen1Row1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A92A023DAB2EF005D6E7F /* Screen1Row1VC.swift */; };
 		E49A92A323DAFB58005D6E7F /* Column1row2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A92A223DAFB58005D6E7F /* Column1row2VC.swift */; };
 		E4D6748023E549EF00AB841C /* Row3Col1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D6747F23E549EF00AB841C /* Row3Col1VC.swift */; };
@@ -47,6 +51,9 @@
 		E4107D3723E147C50052C08F /* Row1Col4signupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row1Col4signupVC.swift; sourceTree = "<group>"; };
 		E4107D3923E17E940052C08F /* Row1col4(2)VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Row1col4(2)VC.swift"; sourceTree = "<group>"; };
 		E4107D4523E19EEB0052C08F /* Row2col4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row2col4VC.swift; sourceTree = "<group>"; };
+		E41EF2CC23EA9C9A00151576 /* Row4Col2MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row4Col2MainVC.swift; sourceTree = "<group>"; };
+		E41EF2CE23EA9F4F00151576 /* Row4Col2SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row4Col2SignUpVC.swift; sourceTree = "<group>"; };
+		E41EF2D023EAA2F300151576 /* Row4Col2SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row4Col2SignInVC.swift; sourceTree = "<group>"; };
 		E424A53223DEB8E400E24A76 /* Row1Col3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row1Col3VC.swift; sourceTree = "<group>"; };
 		E424A53423DEDC7800E24A76 /* Row1Col4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row1Col4VC.swift; sourceTree = "<group>"; };
 		E42C048F23E59F7C0036846D /* Row3Col2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row3Col2VC.swift; sourceTree = "<group>"; };
@@ -56,6 +63,7 @@
 		E440A2A823E2888600B7AF63 /* Row2col3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row2col3VC.swift; sourceTree = "<group>"; };
 		E440A2AA23E28AFE00B7AF63 /* Row2col3SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row2col3SignUp.swift; sourceTree = "<group>"; };
 		E440A2AC23E28B2100B7AF63 /* Row2col3SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row2col3SignIn.swift; sourceTree = "<group>"; };
+		E469911823EA747500645DEF /* Row4Col1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row4Col1VC.swift; sourceTree = "<group>"; };
 		E49A92A023DAB2EF005D6E7F /* Screen1Row1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1Row1VC.swift; sourceTree = "<group>"; };
 		E49A92A223DAFB58005D6E7F /* Column1row2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Column1row2VC.swift; sourceTree = "<group>"; };
 		E4D6747F23E549EF00AB841C /* Row3Col1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row3Col1VC.swift; sourceTree = "<group>"; };
@@ -172,6 +180,10 @@
 		E4D6747E23E5469900AB841C /* Row4Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E469911823EA747500645DEF /* Row4Col1VC.swift */,
+				E41EF2CC23EA9C9A00151576 /* Row4Col2MainVC.swift */,
+				E41EF2CE23EA9F4F00151576 /* Row4Col2SignUpVC.swift */,
+				E41EF2D023EAA2F300151576 /* Row4Col2SignInVC.swift */,
 			);
 			name = Row4Screens;
 			path = "New Group";
@@ -293,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E41EF2CF23EA9F4F00151576 /* Row4Col2SignUpVC.swift in Sources */,
 				E4DBA30623E003F8000F0C61 /* Row2Col1VC.swift in Sources */,
 				E49A92A323DAFB58005D6E7F /* Column1row2VC.swift in Sources */,
 				6EA7653D231FB0D6001C94BB /* ViewController.swift in Sources */,
@@ -304,11 +317,14 @@
 				6EA7653B231FB0D6001C94BB /* AppDelegate.swift in Sources */,
 				E424A53523DEDC7800E24A76 /* Row1Col4VC.swift in Sources */,
 				E432A80C23E94ED40008ADD8 /* Row3Col3VC.swift in Sources */,
+				E469911923EA747500645DEF /* Row4Col1VC.swift in Sources */,
 				E4107D4623E19EEB0052C08F /* Row2col4VC.swift in Sources */,
 				E49A92A123DAB2EF005D6E7F /* Screen1Row1VC.swift in Sources */,
+				E41EF2D123EAA2F300151576 /* Row4Col2SignInVC.swift in Sources */,
 				E4DBA30823E06CFF000F0C61 /* Row2col2VC.swift in Sources */,
 				E424A53323DEB8E400E24A76 /* Row1Col3VC.swift in Sources */,
 				E432A81023E9938A0008ADD8 /* Row3Col4VC.swift in Sources */,
+				E41EF2CD23EA9C9A00151576 /* Row4Col2MainVC.swift in Sources */,
 				E4107D3A23E17E940052C08F /* Row1col4(2)VC.swift in Sources */,
 				E440A2A923E2888600B7AF63 /* Row2col3VC.swift in Sources */,
 				E42C049023E59F7C0036846D /* Row3Col2VC.swift in Sources */,
