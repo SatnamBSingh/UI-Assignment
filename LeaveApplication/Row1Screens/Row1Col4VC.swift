@@ -21,9 +21,16 @@ class Row1Col4VC: UIViewController, CarbonTabSwipeNavigationDelegate {
 
         }
     }
+    func barPosition(for carbonTabSwipeNavigation: CarbonTabSwipeNavigation) -> UIBarPosition {
+        return UIBarPosition.top
+    }
     
-   
-    @IBOutlet weak var barButtonView: UIView!
+
+    @IBAction func backButton(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBOutlet weak var containerView: UIView!
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
@@ -38,7 +45,7 @@ class Row1Col4VC: UIViewController, CarbonTabSwipeNavigationDelegate {
         
         let displays = ["SIGN UP", "SIGN IN"]
         let carbonswipenavigation = CarbonTabSwipeNavigation(items: displays, delegate: self)
-        carbonswipenavigation.insert(intoRootViewController: self)
+        carbonswipenavigation.insert(intoRootViewController: self, andTargetView: containerView)
         carbonswipenavigation.setTabBarHeight(70)
         //below for bar color&Height
         carbonswipenavigation.setIndicatorColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
@@ -53,6 +60,7 @@ class Row1Col4VC: UIViewController, CarbonTabSwipeNavigationDelegate {
         carbonswipenavigation.setNormalColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
         carbonswipenavigation.setSelectedColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
         carbonswipenavigation.toolbar.backgroundImage(forToolbarPosition: .any, barMetrics: .default)
+        //self.containerView = carbonswipenavigation.view
 
          navigationController?.navigationBar.isHidden = true
     }

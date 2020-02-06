@@ -27,12 +27,21 @@ class Row2col3VC: UIViewController, CarbonTabSwipeNavigationDelegate {
         return .lightContent
     }
     
+    @IBOutlet weak var containerView: UIView!
+    
+    @IBAction func backButton(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
     override func viewDidLoad() {
-
+        self.navigationController!.navigationBar.isTranslucent = false
+        self.navigationController!.navigationBar.isTranslucent = false
+        self.navigationController!.navigationBar.tintColor = UIColor.white
+        // self.navigationController!.navigationBar.barTintColor = color
+        self.navigationController!.navigationBar.barStyle = .blackTranslucent
         super.viewDidLoad()
         let displays = ["SIGN UP", "SIGN IN"]
         let carbonswipenavigation = CarbonTabSwipeNavigation(items: displays, delegate: self)
-        carbonswipenavigation.insert(intoRootViewController: self)
+        carbonswipenavigation.insert(intoRootViewController: self, andTargetView: containerView)
         carbonswipenavigation.setTabBarHeight(70)
         //below for bar color&Height
         carbonswipenavigation.setIndicatorColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))

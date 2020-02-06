@@ -14,6 +14,8 @@
 		6EA76542231FB0DF001C94BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA76541231FB0DF001C94BB /* Assets.xcassets */; };
 		6EA76545231FB0DF001C94BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EA76543231FB0DF001C94BB /* LaunchScreen.storyboard */; };
 		924DDE381761E524C0B8113F /* Pods_Ui_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90410DFFF02369A7F14164D1 /* Pods_Ui_Assignment.framework */; };
+		E4085F6A23EBE32300C59EDF /* Row4Col3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4085F6923EBE32300C59EDF /* Row4Col3VC.swift */; };
+		E4085F6C23EC317A00C59EDF /* Row4Col4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4085F6B23EC317A00C59EDF /* Row4Col4VC.swift */; };
 		E4107D3823E147C50052C08F /* Row1Col4signupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4107D3723E147C50052C08F /* Row1Col4signupVC.swift */; };
 		E4107D3A23E17E940052C08F /* Row1col4(2)VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4107D3923E17E940052C08F /* Row1col4(2)VC.swift */; };
 		E4107D4623E19EEB0052C08F /* Row2col4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4107D4523E19EEB0052C08F /* Row2col4VC.swift */; };
@@ -48,6 +50,8 @@
 		6EA76546231FB0DF001C94BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90410DFFF02369A7F14164D1 /* Pods_Ui_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ui_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6F7D2F1689541FD5400632 /* Pods-Ui Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ui Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Ui Assignment/Pods-Ui Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		E4085F6923EBE32300C59EDF /* Row4Col3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row4Col3VC.swift; sourceTree = "<group>"; };
+		E4085F6B23EC317A00C59EDF /* Row4Col4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row4Col4VC.swift; sourceTree = "<group>"; };
 		E4107D3723E147C50052C08F /* Row1Col4signupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row1Col4signupVC.swift; sourceTree = "<group>"; };
 		E4107D3923E17E940052C08F /* Row1col4(2)VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Row1col4(2)VC.swift"; sourceTree = "<group>"; };
 		E4107D4523E19EEB0052C08F /* Row2col4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row2col4VC.swift; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 				E41EF2CC23EA9C9A00151576 /* Row4Col2MainVC.swift */,
 				E41EF2CE23EA9F4F00151576 /* Row4Col2SignUpVC.swift */,
 				E41EF2D023EAA2F300151576 /* Row4Col2SignInVC.swift */,
+				E4085F6923EBE32300C59EDF /* Row4Col3VC.swift */,
+				E4085F6B23EC317A00C59EDF /* Row4Col4VC.swift */,
 			);
 			name = Row4Screens;
 			path = "New Group";
@@ -314,6 +320,7 @@
 				E440A2AD23E28B2100B7AF63 /* Row2col3SignIn.swift in Sources */,
 				E432A80E23E9764B0008ADD8 /* Row3Col3SignupVC.swift in Sources */,
 				E4107D3823E147C50052C08F /* Row1Col4signupVC.swift in Sources */,
+				E4085F6A23EBE32300C59EDF /* Row4Col3VC.swift in Sources */,
 				6EA7653B231FB0D6001C94BB /* AppDelegate.swift in Sources */,
 				E424A53523DEDC7800E24A76 /* Row1Col4VC.swift in Sources */,
 				E432A80C23E94ED40008ADD8 /* Row3Col3VC.swift in Sources */,
@@ -321,6 +328,7 @@
 				E4107D4623E19EEB0052C08F /* Row2col4VC.swift in Sources */,
 				E49A92A123DAB2EF005D6E7F /* Screen1Row1VC.swift in Sources */,
 				E41EF2D123EAA2F300151576 /* Row4Col2SignInVC.swift in Sources */,
+				E4085F6C23EC317A00C59EDF /* Row4Col4VC.swift in Sources */,
 				E4DBA30823E06CFF000F0C61 /* Row2col2VC.swift in Sources */,
 				E424A53323DEB8E400E24A76 /* Row1Col3VC.swift in Sources */,
 				E432A81023E9938A0008ADD8 /* Row3Col4VC.swift in Sources */,

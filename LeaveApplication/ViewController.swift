@@ -85,7 +85,17 @@ class ViewController: UIViewController{
     }
     
     
+    @IBAction func Row4Col3Vc(_ sender: Any) {
+        let row4col3vc = self.storyboard?.instantiateViewController(withIdentifier: "Row4Col3VC") as! Row4Col3VC
+        navigationController?.pushViewController(row4col3vc, animated: true)
+    }
     
+    
+    
+    @IBAction func Row4Col4Vc(_ sender: Any) {
+        let row4col4vc = self.storyboard?.instantiateViewController(withIdentifier: "Row4Col4VC") as! Row4Col4VC
+        navigationController?.pushViewController(row4col4vc, animated: true)
+    }
     
     
     @IBOutlet weak var leadingContraint: NSLayoutConstraint!

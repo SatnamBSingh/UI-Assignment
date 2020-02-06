@@ -55,8 +55,8 @@ class Row3Col2VC: UIViewController {
         
         aspectRatio = signupview.frame.width/signupview.frame.height
         
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panRecognizer(_:)))
-        let panGesture2 = UIPanGestureRecognizer(target: self, action: #selector(panRecognizer(_:)))
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognizer(_:)))
+        let panGesture2 = UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognizer(_:)))
         self.signupview.addGestureRecognizer(panGesture)
         self.signinview.addGestureRecognizer(panGesture2)
         
@@ -89,9 +89,9 @@ class Row3Col2VC: UIViewController {
         signupwithfbbttn.frame = CGRect(x: 13, y: 418, width: signupview.frame.width-2*13, height: 44)
     }
     
-    @objc func panRecognizer(_ sender: UIPanGestureRecognizer){
+    @objc func panGestureRecognizer(_ sender: UIPanGestureRecognizer){
         
-        let initialPosY = signinview.frame.origin.y
+        let intitialPositionY = signinview.frame.origin.y
         let intiallPosY2 = self.signinview.frame.origin.y
         let translation = sender.translation(in: self.view)
         
@@ -100,7 +100,7 @@ class Row3Col2VC: UIViewController {
             
             DispatchQueue.main.async {
                 
-                    print(initialPosY < (initialPosY + translation.y))
+                
                     if sender.view!.tag == 0 {
                 
                 
@@ -122,7 +122,7 @@ class Row3Col2VC: UIViewController {
                         
                 
                         
-                        if initialPosY < (initialPosY + translation.y){
+                        if intitialPositionY < (intitialPositionY + translation.y){
                             self.signinusername.alpha = 1
                             self.signinButton.alpha = 1
                             self.signinpassword.alpha = 1
@@ -131,7 +131,7 @@ class Row3Col2VC: UIViewController {
                             self.signinview.backgroundColor = self.signupview.backgroundColor
                             
                         }
-                        if initialPosY > (initialPosY + translation.y){
+                        if intitialPositionY > (intitialPositionY + translation.y){
                             
                             self.signupview.alpha += 0.3
                             self.signinusername.alpha -= 0.25
