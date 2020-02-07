@@ -98,6 +98,36 @@ class ViewController: UIViewController{
     }
     
     
+    
+    @IBAction func Row5Col1Vc(_ sender: Any) {
+        let row5col1mainvc = self.storyboard?.instantiateViewController(withIdentifier: "Row5Col1MainVC") as! Row5Col1MainVC
+        navigationController?.pushViewController(row5col1mainvc, animated: true)
+    }
+    
+    
+    
+    @IBAction func Row5Col2Vc(_ sender: Any) {
+        let row5col2vc = self.storyboard?.instantiateViewController(withIdentifier: "Row5Col2VC") as! Row5Col2VC
+        navigationController?.pushViewController(row5col2vc, animated: true)
+    }
+    
+    
+    
+    @IBAction func Row5Col3Vc(_ sender: Any) {
+        let row5col3vc = self.storyboard?.instantiateViewController(withIdentifier: "Row5Col3VC") as! Row5Col3VC
+        navigationController?.pushViewController(row5col3vc, animated: true)
+    }
+    
+    
+    
+    @IBAction func Row5Col4Vc(_ sender: Any) {
+        let row5col4vc = self.storyboard?.instantiateViewController(withIdentifier: "Row5Col4VC") as! Row5Col4VC
+        navigationController?.pushViewController(row5col4vc, animated: true)
+    }
+    
+    
+    
+    
     @IBOutlet weak var leadingContraint: NSLayoutConstraint!
     @IBOutlet var ViewBackground: UIView!
     var showMenu = true;
