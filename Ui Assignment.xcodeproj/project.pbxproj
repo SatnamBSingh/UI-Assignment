@@ -28,6 +28,11 @@
 		E432A80C23E94ED40008ADD8 /* Row3Col3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E432A80B23E94ED40008ADD8 /* Row3Col3VC.swift */; };
 		E432A80E23E9764B0008ADD8 /* Row3Col3SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E432A80D23E9764B0008ADD8 /* Row3Col3SignupVC.swift */; };
 		E432A81023E9938A0008ADD8 /* Row3Col4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E432A80F23E9938A0008ADD8 /* Row3Col4VC.swift */; };
+		E435282223EE66A700D61BB1 /* Row6Col1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E435282123EE66A700D61BB1 /* Row6Col1VC.swift */; };
+		E435282423EE761B00D61BB1 /* Row6Col2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E435282323EE761B00D61BB1 /* Row6Col2VC.swift */; };
+		E435282623EE7F6300D61BB1 /* Row6Col3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E435282523EE7F6300D61BB1 /* Row6Col3VC.swift */; };
+		E435282823EE8CCD00D61BB1 /* Row6Col4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E435282723EE8CCD00D61BB1 /* Row6Col4VC.swift */; };
+		E435282B23EE92BB00D61BB1 /* Row7Col1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E435282A23EE92BB00D61BB1 /* Row7Col1VC.swift */; };
 		E440A2A923E2888600B7AF63 /* Row2col3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440A2A823E2888600B7AF63 /* Row2col3VC.swift */; };
 		E440A2AB23E28AFE00B7AF63 /* Row2col3SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440A2AA23E28AFE00B7AF63 /* Row2col3SignUp.swift */; };
 		E440A2AD23E28B2100B7AF63 /* Row2col3SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440A2AC23E28B2100B7AF63 /* Row2col3SignIn.swift */; };
@@ -70,6 +75,11 @@
 		E432A80B23E94ED40008ADD8 /* Row3Col3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row3Col3VC.swift; sourceTree = "<group>"; };
 		E432A80D23E9764B0008ADD8 /* Row3Col3SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row3Col3SignupVC.swift; sourceTree = "<group>"; };
 		E432A80F23E9938A0008ADD8 /* Row3Col4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row3Col4VC.swift; sourceTree = "<group>"; };
+		E435282123EE66A700D61BB1 /* Row6Col1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row6Col1VC.swift; sourceTree = "<group>"; };
+		E435282323EE761B00D61BB1 /* Row6Col2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row6Col2VC.swift; sourceTree = "<group>"; };
+		E435282523EE7F6300D61BB1 /* Row6Col3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row6Col3VC.swift; sourceTree = "<group>"; };
+		E435282723EE8CCD00D61BB1 /* Row6Col4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row6Col4VC.swift; sourceTree = "<group>"; };
+		E435282A23EE92BB00D61BB1 /* Row7Col1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row7Col1VC.swift; sourceTree = "<group>"; };
 		E440A2A823E2888600B7AF63 /* Row2col3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row2col3VC.swift; sourceTree = "<group>"; };
 		E440A2AA23E28AFE00B7AF63 /* Row2col3SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row2col3SignUp.swift; sourceTree = "<group>"; };
 		E440A2AC23E28B2100B7AF63 /* Row2col3SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row2col3SignIn.swift; sourceTree = "<group>"; };
@@ -131,6 +141,8 @@
 		6EA76539231FB0D6001C94BB /* NavigationDrawer */ = {
 			isa = PBXGroup;
 			children = (
+				E435282923EE927D00D61BB1 /* Row7Screens */,
+				E435282023EE667300D61BB1 /* Row6Screens */,
 				E44308AF23ED15F600B65BD7 /* Row5Screens */,
 				E4D6747E23E5469900AB841C /* Row4Screens */,
 				E440A2A723E2861A00B7AF63 /* Row3Screens */,
@@ -180,6 +192,25 @@
 				E4107D4523E19EEB0052C08F /* Row2col4VC.swift */,
 			);
 			path = Row2Screens;
+			sourceTree = "<group>";
+		};
+		E435282023EE667300D61BB1 /* Row6Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E435282123EE66A700D61BB1 /* Row6Col1VC.swift */,
+				E435282323EE761B00D61BB1 /* Row6Col2VC.swift */,
+				E435282523EE7F6300D61BB1 /* Row6Col3VC.swift */,
+				E435282723EE8CCD00D61BB1 /* Row6Col4VC.swift */,
+			);
+			path = Row6Screens;
+			sourceTree = "<group>";
+		};
+		E435282923EE927D00D61BB1 /* Row7Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E435282A23EE92BB00D61BB1 /* Row7Col1VC.swift */,
+			);
+			path = Row7Screens;
 			sourceTree = "<group>";
 		};
 		E440A2A723E2861A00B7AF63 /* Row3Screens */ = {
@@ -338,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E44308B723ED29CD00B65BD7 /* Row5Col2VC.swift in Sources */,
+				E435282223EE66A700D61BB1 /* Row6Col1VC.swift in Sources */,
 				E41EF2CF23EA9F4F00151576 /* Row4Col2SignUpVC.swift in Sources */,
 				E4DBA30623E003F8000F0C61 /* Row2Col1VC.swift in Sources */,
 				E49A92A323DAFB58005D6E7F /* Column1row2VC.swift in Sources */,
@@ -346,6 +378,7 @@
 				E440A2AB23E28AFE00B7AF63 /* Row2col3SignUp.swift in Sources */,
 				E44308B123ED165400B65BD7 /* Row5Col1MainVC.swift in Sources */,
 				E4D6748023E549EF00AB841C /* Row3Col1VC.swift in Sources */,
+				E435282823EE8CCD00D61BB1 /* Row6Col4VC.swift in Sources */,
 				E440A2AD23E28B2100B7AF63 /* Row2col3SignIn.swift in Sources */,
 				E432A80E23E9764B0008ADD8 /* Row3Col3SignupVC.swift in Sources */,
 				E4107D3823E147C50052C08F /* Row1Col4signupVC.swift in Sources */,
@@ -355,7 +388,9 @@
 				E432A80C23E94ED40008ADD8 /* Row3Col3VC.swift in Sources */,
 				E469911923EA747500645DEF /* Row4Col1VC.swift in Sources */,
 				E4107D4623E19EEB0052C08F /* Row2col4VC.swift in Sources */,
+				E435282623EE7F6300D61BB1 /* Row6Col3VC.swift in Sources */,
 				E49A92A123DAB2EF005D6E7F /* Screen1Row1VC.swift in Sources */,
+				E435282B23EE92BB00D61BB1 /* Row7Col1VC.swift in Sources */,
 				E41EF2D123EAA2F300151576 /* Row4Col2SignInVC.swift in Sources */,
 				E44308B923ED3E3400B65BD7 /* Row5Col3VC.swift in Sources */,
 				E4085F6C23EC317A00C59EDF /* Row4Col4VC.swift in Sources */,
@@ -365,6 +400,7 @@
 				E41EF2CD23EA9C9A00151576 /* Row4Col2MainVC.swift in Sources */,
 				E4107D3A23E17E940052C08F /* Row1col4(2)VC.swift in Sources */,
 				E44308BB23ED768400B65BD7 /* Row5Col4VC.swift in Sources */,
+				E435282423EE761B00D61BB1 /* Row6Col2VC.swift in Sources */,
 				E440A2A923E2888600B7AF63 /* Row2col3VC.swift in Sources */,
 				E42C049023E59F7C0036846D /* Row3Col2VC.swift in Sources */,
 				E44308B323ED198C00B65BD7 /* Row5Col1SignInVC.swift in Sources */,

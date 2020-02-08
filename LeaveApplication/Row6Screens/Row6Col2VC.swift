@@ -1,37 +1,35 @@
 //
-//  Screen1Row1VC.swift
+//  Row6Col2VC.swift
 //  Ui Assignment
 //
-//  Created by Captain on 24/01/20.
+//  Created by Captain on 08/02/20.
 //
 
 import UIKit
 
-class Screen1Row1VC: UIViewController {
+class Row6Col2VC: UIViewController {
 
     
     
-    @IBOutlet var imageviewscreen1: UIImageView!
-    
-    @IBOutlet var scrollview: UIScrollView!
-    @IBAction func backbutton(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-        //self.dismiss(animated: true, completion: nil)
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBAction func indexChanged(_ sender: Any) {
     }
-    
+    @IBAction func backMenu(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        let titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black]
+        UISegmentedControl.appearance().setTitleTextAttributes(titleTextAttributes, for: .selected)
         self.navigationController!.navigationBar.isTranslucent = false
         self.navigationController!.navigationBar.isTranslucent = false
         self.navigationController!.navigationBar.tintColor = UIColor.white
         self.navigationController!.navigationBar.barStyle = .blackTranslucent
         navigationController?.navigationBar.isHidden = true
-        navigationController?.navigationBar.isHidden = true
+navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = true
-    }
+    
 
     /*
     // MARK: - Navigation

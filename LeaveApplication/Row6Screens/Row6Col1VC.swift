@@ -1,22 +1,20 @@
 //
-//  Row5Col3VC.swift
+//  Row6Col1VC.swift
 //  Ui Assignment
 //
-//  Created by Captain on 07/02/20.
+//  Created by Captain on 08/02/20.
 //
 
 import UIKit
 
-class Row5Col3VC: UIViewController {
+class Row6Col1VC: UIViewController {
 
     
     @IBOutlet weak var signinCredentials: UIView!
-    @IBAction func backMenu(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
-    
+    @IBOutlet weak var signupCredentials: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.navigationController!.navigationBar.isTranslucent = false
         self.navigationController!.navigationBar.isTranslucent = false
         self.navigationController!.navigationBar.tintColor = UIColor.white
@@ -25,7 +23,12 @@ class Row5Col3VC: UIViewController {
         signinCredentials.layer.shadowColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         signinCredentials.layer.shadowOffset = CGSize(width: 1, height: 1)
         signinCredentials.layer.shadowOpacity = 1.0
-     navigationController?.navigationBar.isHidden = true
+        signupCredentials.backgroundColor = UIColor.white
+        signupCredentials.layer.shadowColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        signupCredentials.layer.shadowOffset = CGSize(width: 1, height: 1)
+        signupCredentials.layer.shadowOpacity = 1.0
+        
+   navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
     

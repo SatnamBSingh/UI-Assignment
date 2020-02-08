@@ -61,7 +61,7 @@ class Row3Col2VC: UIViewController {
         self.signinview.addGestureRecognizer(panGesture2)
         
         signinview.tag = 1
-        signinview.tag = 0
+        signupview.tag = 0
         
     }
     

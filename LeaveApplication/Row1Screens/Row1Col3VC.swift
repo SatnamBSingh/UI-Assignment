@@ -19,6 +19,12 @@ class Row1Col3VC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController!.navigationBar.isTranslucent = false
+        self.navigationController!.navigationBar.isTranslucent = false
+        self.navigationController!.navigationBar.tintColor = UIColor.white
+        self.navigationController!.navigationBar.barStyle = .blackTranslucent
+        navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
 navigationController?.navigationBar.isHidden = true
      //   myTextField.attributedPlaceholder = NSAttributedString(string: "placeholder text",attributes: [NSForegroundColorAttributeName: UIColor.yellow])
         

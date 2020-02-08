@@ -16,9 +16,11 @@ class Row2col2VC: UIViewController {
     @IBOutlet weak var signup: UIButton!
     @IBOutlet weak var backview2: UIView!
     @IBOutlet weak var backview1: UIView!
+    
     @IBAction func backbutton(_ sender: Any) {
     navigationController?.popViewController(animated: true)
     }
+    
     @IBOutlet weak var fullnametxtfld: UITextField!
     @IBOutlet weak var lastnametxtfld: UITextField!
     @IBOutlet weak var emailtxtfld: UITextField!

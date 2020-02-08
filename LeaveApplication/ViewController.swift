@@ -126,6 +126,40 @@ class ViewController: UIViewController{
     }
     
     
+    @IBAction func Row6Col1Vc(_ sender: Any) {
+        let row6col1vc = self.storyboard?.instantiateViewController(withIdentifier: "Row6Col1VC") as! Row6Col1VC
+        navigationController?.pushViewController(row6col1vc, animated: true)
+    }
+    
+    
+    @IBAction func Row6Col2Vc(_ sender: Any) {
+        let row6col2vc = self.storyboard?.instantiateViewController(withIdentifier: "Row6Col2VC") as! Row6Col2VC
+        navigationController?.pushViewController(row6col2vc, animated: true)
+    }
+    
+    
+    
+    @IBAction func Row6Col3Vc(_ sender: Any) {
+        let row6col3vc  = self.storyboard?.instantiateViewController(withIdentifier: "Row6Col3VC") as! Row6Col3VC
+        navigationController?.pushViewController(row6col3vc, animated: true)
+    }
+    
+    
+    @IBAction func Row6Col4Vc(_ sender: Any) {
+        let row6col4vc = self.storyboard?.instantiateViewController(withIdentifier: "Row6Col4VC") as! Row6Col4VC
+        navigationController?.pushViewController(row6col4vc, animated: true)
+    }
+    
+    
+    
+    @IBAction func Row7Col1Vc(_ sender: Any) {
+        let row7col1vc = self.storyboard?.instantiateViewController(withIdentifier: "Row7Col1VC") as! Row7Col1VC
+        navigationController?.pushViewController(row7col1vc, animated: true)
+    }
+    
+    
+    
+    
     
     
     @IBOutlet weak var leadingContraint: NSLayoutConstraint!
