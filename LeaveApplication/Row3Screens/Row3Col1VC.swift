@@ -26,7 +26,6 @@ class Row3Col1VC: UIViewController {
         addinfoview.layer.shadowColor = UIColor.lightGray.cgColor
         addinfoview.layer.shadowOffset = CGSize(width: 1, height: 1)
         addinfoview.layer.shadowOpacity  = 1.0
-        
         // Do any additional setup after loading the view.
     }
     
