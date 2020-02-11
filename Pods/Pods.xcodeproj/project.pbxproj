@@ -7,81 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08316C488BBBE3C9CACD552A867306B3 /* CarbonTabSwipeScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D8F8634F8AF99302E68966B070F63C /* CarbonTabSwipeScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0EAEEE457525BF058E1D6DD21A7B7BE0 /* CarbonKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EBCC31341E2B833452B6A6284A42771 /* CarbonKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24F94BD9FF9301B56E2BF9675F0FA3BA /* CarbonKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0315827A4FBDDC60746B0580622EA5E /* CarbonKit-dummy.m */; };
-		3BADD89280FA5C9F2BC1BE3E680CA2AD /* CarbonSwipeRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD56B5B61C3773DF56F37B1E35FC718 /* CarbonSwipeRefresh.m */; };
+		08316C488BBBE3C9CACD552A867306B3 /* CarbonTabSwipeScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C9B16BF471E54BAA667BC72A0CF62A1 /* CarbonTabSwipeScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EAEEE457525BF058E1D6DD21A7B7BE0 /* CarbonKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 564B705DEE55695C4B6E4E581E7B0BEB /* CarbonKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24F94BD9FF9301B56E2BF9675F0FA3BA /* CarbonKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A573FD024522D8D2DE2E4D823E2BC /* CarbonKit-dummy.m */; };
+		3BADD89280FA5C9F2BC1BE3E680CA2AD /* CarbonSwipeRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A3144933057ED49ACDA7F2B8EFCC51 /* CarbonSwipeRefresh.m */; };
+		48C8E5E0E2D23BEA61604383B9E0F10A /* TPKeyboardAvoidingSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B26016A07692A10E1EEF30105C516D5B /* TPKeyboardAvoidingSwift-dummy.m */; };
 		48D582BC61A1251DFD27BA765829FBDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
-		51A0998B006EC835DBBF7E93AF2A3201 /* CarbonTabSwipeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B50ECA4A54F2AACF1C687A565F0A65 /* CarbonTabSwipeScrollView.m */; };
-		58028E39720CD948B3E1AFC7C16D38F5 /* CarbonSwipeRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF8EED9B22BDF15C734844F7D2F3FCA /* CarbonSwipeRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B3276679D9065A41200B5347DB8461D /* Pods-Ui Assignment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A55F5BFB6849FDCE8BD1C1DDB3ACDD17 /* Pods-Ui Assignment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B631EFFA6CE27C7DADAEA45CC64B41B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		7CEF4A5278DDE7601D9EB85266B62C55 /* CarbonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 099964774E6A80CA9B5CC4A2D78D20D7 /* CarbonKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51A0998B006EC835DBBF7E93AF2A3201 /* CarbonTabSwipeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0B18C7E8B74E2778CEDBD393B10D06 /* CarbonTabSwipeScrollView.m */; };
+		58028E39720CD948B3E1AFC7C16D38F5 /* CarbonSwipeRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = DD22E41A1E8C1179129770A24D0DADD2 /* CarbonSwipeRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		709DA77E833CD662B9964AB358238DBB /* Pods-Ui Assignment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A55F5BFB6849FDCE8BD1C1DDB3ACDD17 /* Pods-Ui Assignment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CEF4A5278DDE7601D9EB85266B62C55 /* CarbonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 56016630470C1E4499DAEC6157E6D9DC /* CarbonKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B5EBF38219913BC678F41776ED15B74 /* Pods-Ui Assignment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A0B7214D932E95DD5D8473ECE686BF /* Pods-Ui Assignment-dummy.m */; };
+		B61B62C47C6633DA017401700EC95665 /* TPKeyboardAvoidingSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C077C1A1416C50B919402FF7EFEFF8D6 /* TPKeyboardAvoidingSwift.swift */; };
 		B9AE80EAA4D2189E673332125190328F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		BD8E90645FDE43FD41342AC9322FB151 /* CarbonTabSwipeNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8824942ADBF52AFF62DD361581611DE5 /* CarbonTabSwipeNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA1E482A29EB172F419609811B78D19A /* Pods-Ui Assignment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A0B7214D932E95DD5D8473ECE686BF /* Pods-Ui Assignment-dummy.m */; };
-		D9717432E8D1402242F358DD197A2627 /* CarbonTabSwipeSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D809AD58CE8775E1693A4AB17EE0F4 /* CarbonTabSwipeSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E69D5596F58F7CE052C09272F51AF3CD /* CarbonTabSwipeNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 019D1273C0A3E13C54D1C96191406BAD /* CarbonTabSwipeNavigation.m */; };
-		E73672A78A2A1DC2B3DC37F8A021FDE7 /* CarbonTabSwipeSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B5DFFE2B6CD1F7655E36022D25EB3 /* CarbonTabSwipeSegmentedControl.m */; };
+		BD8E90645FDE43FD41342AC9322FB151 /* CarbonTabSwipeNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B679AD6DD0B508D31D5BD0B96AFB8D7 /* CarbonTabSwipeNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6BF330F96A7348251068F0046C2B202 /* TPKeyboardAvoidingSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 859CCBB4EACBB12C991EFC59816098DC /* TPKeyboardAvoidingSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C84BEE66AF9057BC2166697385B5CE9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		D540EE5B5018B511633EB8CEEBB8BE9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		D9717432E8D1402242F358DD197A2627 /* CarbonTabSwipeSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = F3347DCB3FBCE666D9962F12E16B65E6 /* CarbonTabSwipeSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E69D5596F58F7CE052C09272F51AF3CD /* CarbonTabSwipeNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB07EF260CCE2E8A925EBEBFD004D11 /* CarbonTabSwipeNavigation.m */; };
+		E73672A78A2A1DC2B3DC37F8A021FDE7 /* CarbonTabSwipeSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E39FE9888C10F48AF5DBE7057224F8 /* CarbonTabSwipeSegmentedControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FDB43FB4DA5754838A3591A74722B650 /* PBXContainerItemProxy */ = {
+		8A8BE6FAD2B3B92745D068CDE1955861 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AF9228424A074D42F13FABA26E972B57;
 			remoteInfo = CarbonKit;
 		};
+		C7A97D42C938E920478E5AC3F20506C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 997BD0C6C6E9A7EF79DD4AA760E75C8E;
+			remoteInfo = TPKeyboardAvoidingSwift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		019D1273C0A3E13C54D1C96191406BAD /* CarbonTabSwipeNavigation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CarbonTabSwipeNavigation.m; path = CarbonKit/CarbonTabSwipeNavigation.m; sourceTree = "<group>"; };
+		02A37947CE4199C829112489D2CC15BE /* TPKeyboardAvoidingSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPKeyboardAvoidingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		038FAF92B1329BE944CE45F962F6079C /* Pods-Ui Assignment-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ui Assignment-acknowledgements.plist"; sourceTree = "<group>"; };
-		04D8F8634F8AF99302E68966B070F63C /* CarbonTabSwipeScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarbonTabSwipeScrollView.h; path = CarbonKit/CarbonTabSwipeScrollView.h; sourceTree = "<group>"; };
-		099964774E6A80CA9B5CC4A2D78D20D7 /* CarbonKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarbonKit.h; path = CarbonKit/CarbonKit.h; sourceTree = "<group>"; };
-		0EBCC31341E2B833452B6A6284A42771 /* CarbonKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CarbonKit-umbrella.h"; sourceTree = "<group>"; };
+		0DB07EF260CCE2E8A925EBEBFD004D11 /* CarbonTabSwipeNavigation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CarbonTabSwipeNavigation.m; path = CarbonKit/CarbonTabSwipeNavigation.m; sourceTree = "<group>"; };
 		1D37586F3AF4D8DE78F201DFA0FCA18B /* Pods-Ui Assignment-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ui Assignment-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1E0B18C7E8B74E2778CEDBD393B10D06 /* CarbonTabSwipeScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CarbonTabSwipeScrollView.m; path = CarbonKit/CarbonTabSwipeScrollView.m; sourceTree = "<group>"; };
 		2E941A28A88272B62F05428C04C7B7C4 /* Pods-Ui Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ui Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		375CCF6D0477A5D18A8EA4CA1679917F /* Pods-Ui Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ui Assignment.debug.xcconfig"; sourceTree = "<group>"; };
-		3D8B5DFFE2B6CD1F7655E36022D25EB3 /* CarbonTabSwipeSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CarbonTabSwipeSegmentedControl.m; path = CarbonKit/CarbonTabSwipeSegmentedControl.m; sourceTree = "<group>"; };
+		3919D6CB9978E0095E3297B7E0EAC8A6 /* CarbonKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CarbonKit.modulemap; sourceTree = "<group>"; };
+		4112DA1C982FF70C678C9CDA6CA02E79 /* CarbonKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CarbonKit-prefix.pch"; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4654C45911B9B2CC296870498BA45879 /* Pods-Ui Assignment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Ui Assignment.modulemap"; sourceTree = "<group>"; };
+		4C9B16BF471E54BAA667BC72A0CF62A1 /* CarbonTabSwipeScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarbonTabSwipeScrollView.h; path = CarbonKit/CarbonTabSwipeScrollView.h; sourceTree = "<group>"; };
+		56016630470C1E4499DAEC6157E6D9DC /* CarbonKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarbonKit.h; path = CarbonKit/CarbonKit.h; sourceTree = "<group>"; };
+		564B705DEE55695C4B6E4E581E7B0BEB /* CarbonKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CarbonKit-umbrella.h"; sourceTree = "<group>"; };
+		5A2A573FD024522D8D2DE2E4D823E2BC /* CarbonKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CarbonKit-dummy.m"; sourceTree = "<group>"; };
+		5B679AD6DD0B508D31D5BD0B96AFB8D7 /* CarbonTabSwipeNavigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarbonTabSwipeNavigation.h; path = CarbonKit/CarbonTabSwipeNavigation.h; sourceTree = "<group>"; };
+		618CE0678076DC2FA7C75DE08A04BBF6 /* TPKeyboardAvoidingSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoidingSwift-prefix.pch"; sourceTree = "<group>"; };
+		66574BF482D92153580B3EFF887B623C /* CarbonKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CarbonKit-Info.plist"; sourceTree = "<group>"; };
 		697E84DCF51AE658E25D1C57BE942B44 /* Pods-Ui Assignment-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ui Assignment-Info.plist"; sourceTree = "<group>"; };
-		6FD56B5B61C3773DF56F37B1E35FC718 /* CarbonSwipeRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CarbonSwipeRefresh.m; path = CarbonKit/CarbonSwipeRefresh.m; sourceTree = "<group>"; };
-		718DE08DDD9EB150A2105963100878D3 /* Pods_Ui_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Ui_Assignment.framework; path = "Pods-Ui Assignment.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7507FF2A31069EBD97E584BA0C45CF5A /* CarbonKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CarbonKit.modulemap; sourceTree = "<group>"; };
-		857D0B90490FD8083F79B97597566B28 /* CarbonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CarbonKit.framework; path = CarbonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		85951284E05B81C3B79E4F0D907571FB /* CarbonKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CarbonKit-Info.plist"; sourceTree = "<group>"; };
-		8824942ADBF52AFF62DD361581611DE5 /* CarbonTabSwipeNavigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarbonTabSwipeNavigation.h; path = CarbonKit/CarbonTabSwipeNavigation.h; sourceTree = "<group>"; };
+		718DE08DDD9EB150A2105963100878D3 /* Pods_Ui_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ui_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		857D0B90490FD8083F79B97597566B28 /* CarbonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarbonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		859CCBB4EACBB12C991EFC59816098DC /* TPKeyboardAvoidingSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoidingSwift-umbrella.h"; sourceTree = "<group>"; };
+		886B110694D9C72D19FAED5768E6A936 /* TPKeyboardAvoidingSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPKeyboardAvoidingSwift.modulemap; sourceTree = "<group>"; };
 		97A0B7214D932E95DD5D8473ECE686BF /* Pods-Ui Assignment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ui Assignment-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3E39FE9888C10F48AF5DBE7057224F8 /* CarbonTabSwipeSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CarbonTabSwipeSegmentedControl.m; path = CarbonKit/CarbonTabSwipeSegmentedControl.m; sourceTree = "<group>"; };
 		A55F5BFB6849FDCE8BD1C1DDB3ACDD17 /* Pods-Ui Assignment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ui Assignment-umbrella.h"; sourceTree = "<group>"; };
-		B13F8B682638504257F4BB9A4D21161B /* CarbonKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CarbonKit.xcconfig; sourceTree = "<group>"; };
+		B26016A07692A10E1EEF30105C516D5B /* TPKeyboardAvoidingSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoidingSwift-dummy.m"; sourceTree = "<group>"; };
 		B46D0ED14B8030BE162D84E89378E310 /* Pods-Ui Assignment-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ui Assignment-frameworks.sh"; sourceTree = "<group>"; };
-		CEF8EED9B22BDF15C734844F7D2F3FCA /* CarbonSwipeRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarbonSwipeRefresh.h; path = CarbonKit/CarbonSwipeRefresh.h; sourceTree = "<group>"; };
-		D2D809AD58CE8775E1693A4AB17EE0F4 /* CarbonTabSwipeSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarbonTabSwipeSegmentedControl.h; path = CarbonKit/CarbonTabSwipeSegmentedControl.h; sourceTree = "<group>"; };
-		DC6E977DB28872336F81878595E3EA41 /* CarbonKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CarbonKit-prefix.pch"; sourceTree = "<group>"; };
-		E4B50ECA4A54F2AACF1C687A565F0A65 /* CarbonTabSwipeScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CarbonTabSwipeScrollView.m; path = CarbonKit/CarbonTabSwipeScrollView.m; sourceTree = "<group>"; };
-		F0315827A4FBDDC60746B0580622EA5E /* CarbonKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CarbonKit-dummy.m"; sourceTree = "<group>"; };
+		C077C1A1416C50B919402FF7EFEFF8D6 /* TPKeyboardAvoidingSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TPKeyboardAvoidingSwift.swift; path = TPKeyboardAvoidingSwift/Classes/TPKeyboardAvoidingSwift.swift; sourceTree = "<group>"; };
+		C55FFF3CA4B96F8205672E22B74F315D /* TPKeyboardAvoidingSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TPKeyboardAvoidingSwift-Info.plist"; sourceTree = "<group>"; };
+		CE8CE6BE51ED1F30B84DA71F27D610F4 /* CarbonKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CarbonKit.xcconfig; sourceTree = "<group>"; };
+		DD22E41A1E8C1179129770A24D0DADD2 /* CarbonSwipeRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarbonSwipeRefresh.h; path = CarbonKit/CarbonSwipeRefresh.h; sourceTree = "<group>"; };
+		E67374982E69C43971D7F33F2595061D /* TPKeyboardAvoidingSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoidingSwift.xcconfig; sourceTree = "<group>"; };
+		F3347DCB3FBCE666D9962F12E16B65E6 /* CarbonTabSwipeSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarbonTabSwipeSegmentedControl.h; path = CarbonKit/CarbonTabSwipeSegmentedControl.h; sourceTree = "<group>"; };
+		F9A3144933057ED49ACDA7F2B8EFCC51 /* CarbonSwipeRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CarbonSwipeRefresh.m; path = CarbonKit/CarbonSwipeRefresh.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		20C07449CB9F579A7A6F4D974294A2FA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B631EFFA6CE27C7DADAEA45CC64B41B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		37E9F682E6A4C0E050104CC9A9A4FB49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B9AE80EAA4D2189E673332125190328F /* Foundation.framework in Frameworks */,
 				48D582BC61A1251DFD27BA765829FBDC /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54FFEC54737093509256ED36C36430EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D540EE5B5018B511633EB8CEEBB8BE9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72845E5FF0531EEA862324D1564F007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84BEE66AF9057BC2166697385B5CE9D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,10 +140,21 @@
 			path = "Target Support Files/Pods-Ui Assignment";
 			sourceTree = "<group>";
 		};
-		583CD1E498301F72C2C1BCD74E525548 /* Pods */ = {
+		3E02035F3FDBB7D88017EDEE8B321C88 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CCC41E7B82AD5F80AA6C5E9D0B8AF3EA /* CarbonKit */,
+				857D0B90490FD8083F79B97597566B28 /* CarbonKit.framework */,
+				718DE08DDD9EB150A2105963100878D3 /* Pods_Ui_Assignment.framework */,
+				02A37947CE4199C829112489D2CC15BE /* TPKeyboardAvoidingSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46F6824D51F19CC2FB1205CCF3E59F91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84A14212439B1AC8A8A8B29A4E72D354 /* CarbonKit */,
+				F756462826F0BE425DB4C505E715F3DC /* TPKeyboardAvoidingSwift */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -129,36 +167,49 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C19814D49271379B4E7E113ECE9DC4BE /* Support Files */ = {
+		84A14212439B1AC8A8A8B29A4E72D354 /* CarbonKit */ = {
 			isa = PBXGroup;
 			children = (
-				7507FF2A31069EBD97E584BA0C45CF5A /* CarbonKit.modulemap */,
-				B13F8B682638504257F4BB9A4D21161B /* CarbonKit.xcconfig */,
-				F0315827A4FBDDC60746B0580622EA5E /* CarbonKit-dummy.m */,
-				85951284E05B81C3B79E4F0D907571FB /* CarbonKit-Info.plist */,
-				DC6E977DB28872336F81878595E3EA41 /* CarbonKit-prefix.pch */,
-				0EBCC31341E2B833452B6A6284A42771 /* CarbonKit-umbrella.h */,
+				56016630470C1E4499DAEC6157E6D9DC /* CarbonKit.h */,
+				DD22E41A1E8C1179129770A24D0DADD2 /* CarbonSwipeRefresh.h */,
+				F9A3144933057ED49ACDA7F2B8EFCC51 /* CarbonSwipeRefresh.m */,
+				5B679AD6DD0B508D31D5BD0B96AFB8D7 /* CarbonTabSwipeNavigation.h */,
+				0DB07EF260CCE2E8A925EBEBFD004D11 /* CarbonTabSwipeNavigation.m */,
+				4C9B16BF471E54BAA667BC72A0CF62A1 /* CarbonTabSwipeScrollView.h */,
+				1E0B18C7E8B74E2778CEDBD393B10D06 /* CarbonTabSwipeScrollView.m */,
+				F3347DCB3FBCE666D9962F12E16B65E6 /* CarbonTabSwipeSegmentedControl.h */,
+				A3E39FE9888C10F48AF5DBE7057224F8 /* CarbonTabSwipeSegmentedControl.m */,
+				AE150CC9DAE8F7196A812FF74B8A2607 /* Support Files */,
+			);
+			path = CarbonKit;
+			sourceTree = "<group>";
+		};
+		A5BDB14EBA8E675F16CB97C75BD579D0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				886B110694D9C72D19FAED5768E6A936 /* TPKeyboardAvoidingSwift.modulemap */,
+				E67374982E69C43971D7F33F2595061D /* TPKeyboardAvoidingSwift.xcconfig */,
+				B26016A07692A10E1EEF30105C516D5B /* TPKeyboardAvoidingSwift-dummy.m */,
+				C55FFF3CA4B96F8205672E22B74F315D /* TPKeyboardAvoidingSwift-Info.plist */,
+				618CE0678076DC2FA7C75DE08A04BBF6 /* TPKeyboardAvoidingSwift-prefix.pch */,
+				859CCBB4EACBB12C991EFC59816098DC /* TPKeyboardAvoidingSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TPKeyboardAvoidingSwift";
+			sourceTree = "<group>";
+		};
+		AE150CC9DAE8F7196A812FF74B8A2607 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3919D6CB9978E0095E3297B7E0EAC8A6 /* CarbonKit.modulemap */,
+				CE8CE6BE51ED1F30B84DA71F27D610F4 /* CarbonKit.xcconfig */,
+				5A2A573FD024522D8D2DE2E4D823E2BC /* CarbonKit-dummy.m */,
+				66574BF482D92153580B3EFF887B623C /* CarbonKit-Info.plist */,
+				4112DA1C982FF70C678C9CDA6CA02E79 /* CarbonKit-prefix.pch */,
+				564B705DEE55695C4B6E4E581E7B0BEB /* CarbonKit-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CarbonKit";
-			sourceTree = "<group>";
-		};
-		CCC41E7B82AD5F80AA6C5E9D0B8AF3EA /* CarbonKit */ = {
-			isa = PBXGroup;
-			children = (
-				099964774E6A80CA9B5CC4A2D78D20D7 /* CarbonKit.h */,
-				CEF8EED9B22BDF15C734844F7D2F3FCA /* CarbonSwipeRefresh.h */,
-				6FD56B5B61C3773DF56F37B1E35FC718 /* CarbonSwipeRefresh.m */,
-				8824942ADBF52AFF62DD361581611DE5 /* CarbonTabSwipeNavigation.h */,
-				019D1273C0A3E13C54D1C96191406BAD /* CarbonTabSwipeNavigation.m */,
-				04D8F8634F8AF99302E68966B070F63C /* CarbonTabSwipeScrollView.h */,
-				E4B50ECA4A54F2AACF1C687A565F0A65 /* CarbonTabSwipeScrollView.m */,
-				D2D809AD58CE8775E1693A4AB17EE0F4 /* CarbonTabSwipeSegmentedControl.h */,
-				3D8B5DFFE2B6CD1F7655E36022D25EB3 /* CarbonTabSwipeSegmentedControl.m */,
-				C19814D49271379B4E7E113ECE9DC4BE /* Support Files */,
-			);
-			name = CarbonKit;
-			path = CarbonKit;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -166,19 +217,10 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				583CD1E498301F72C2C1BCD74E525548 /* Pods */,
-				DFEA66B0F60B46230BA34FB52127C7F1 /* Products */,
+				46F6824D51F19CC2FB1205CCF3E59F91 /* Pods */,
+				3E02035F3FDBB7D88017EDEE8B321C88 /* Products */,
 				7F804BC286204FD5B10090F5323798ED /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		DFEA66B0F60B46230BA34FB52127C7F1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				857D0B90490FD8083F79B97597566B28 /* CarbonKit.framework */,
-				718DE08DDD9EB150A2105963100878D3 /* Pods_Ui_Assignment.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
@@ -190,14 +232,31 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		F756462826F0BE425DB4C505E715F3DC /* TPKeyboardAvoidingSwift */ = {
+			isa = PBXGroup;
+			children = (
+				C077C1A1416C50B919402FF7EFEFF8D6 /* TPKeyboardAvoidingSwift.swift */,
+				A5BDB14EBA8E675F16CB97C75BD579D0 /* Support Files */,
+			);
+			path = TPKeyboardAvoidingSwift;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4D4045FECC59A71DA714663C78CBBA25 /* Headers */ = {
+		0BF71D5EE7821B65B636AC67FE7875CB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B3276679D9065A41200B5347DB8461D /* Pods-Ui Assignment-umbrella.h in Headers */,
+				709DA77E833CD662B9964AB358238DBB /* Pods-Ui Assignment-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A44AAFB920BCE75D7CA801BDEBCACA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BF330F96A7348251068F0046C2B202 /* TPKeyboardAvoidingSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +276,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		997BD0C6C6E9A7EF79DD4AA760E75C8E /* TPKeyboardAvoidingSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDE9FF29B624AAF9C9BD1203C7C3D3D /* Build configuration list for PBXNativeTarget "TPKeyboardAvoidingSwift" */;
+			buildPhases = (
+				6A44AAFB920BCE75D7CA801BDEBCACA6 /* Headers */,
+				6CFF113D48E4C612E3C51B2D1067077C /* Sources */,
+				54FFEC54737093509256ED36C36430EE /* Frameworks */,
+				93F9813E8CAFB303C7263F96531930AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPKeyboardAvoidingSwift;
+			productName = TPKeyboardAvoidingSwift;
+			productReference = 02A37947CE4199C829112489D2CC15BE /* TPKeyboardAvoidingSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		AF9228424A074D42F13FABA26E972B57 /* CarbonKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C1C44E62D19630DCAF2E47CD796ADB0 /* Build configuration list for PBXNativeTarget "CarbonKit" */;
@@ -237,17 +314,18 @@
 		};
 		E333B3BA8C2274533A28993685576628 /* Pods-Ui Assignment */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B9E10E3FEAF53CF501977385777B39B /* Build configuration list for PBXNativeTarget "Pods-Ui Assignment" */;
+			buildConfigurationList = 085ABC34EEBE6C16A8698F5A3455A817 /* Build configuration list for PBXNativeTarget "Pods-Ui Assignment" */;
 			buildPhases = (
-				4D4045FECC59A71DA714663C78CBBA25 /* Headers */,
-				398F285D123C35D9410AB3BAA0ADDA67 /* Sources */,
-				20C07449CB9F579A7A6F4D974294A2FA /* Frameworks */,
-				51C2E2FF76437033582163391C592BA4 /* Resources */,
+				0BF71D5EE7821B65B636AC67FE7875CB /* Headers */,
+				CDC4F11F016FC2AF9ED34566E8A6DC2B /* Sources */,
+				A72845E5FF0531EEA862324D1564F007 /* Frameworks */,
+				B04FEEE97508DA0B80C210B516FC7D74 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				92C4EE4E28FAB4AEB56C009A900E8F9F /* PBXTargetDependency */,
+				3B3FD53BCD0A8DCD3093F59E06D29F3B /* PBXTargetDependency */,
+				3C3812B1D054FA898A8D54749D6E919E /* PBXTargetDependency */,
 			);
 			name = "Pods-Ui Assignment";
 			productName = "Pods-Ui Assignment";
@@ -271,25 +349,33 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = DFEA66B0F60B46230BA34FB52127C7F1 /* Products */;
+			productRefGroup = 3E02035F3FDBB7D88017EDEE8B321C88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				AF9228424A074D42F13FABA26E972B57 /* CarbonKit */,
 				E333B3BA8C2274533A28993685576628 /* Pods-Ui Assignment */,
+				997BD0C6C6E9A7EF79DD4AA760E75C8E /* TPKeyboardAvoidingSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		51C2E2FF76437033582163391C592BA4 /* Resources */ = {
+		7FD281292E4E4F95C99C9197BF44A009 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FD281292E4E4F95C99C9197BF44A009 /* Resources */ = {
+		93F9813E8CAFB303C7263F96531930AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04FEEE97508DA0B80C210B516FC7D74 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,26 +397,80 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		398F285D123C35D9410AB3BAA0ADDA67 /* Sources */ = {
+		6CFF113D48E4C612E3C51B2D1067077C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA1E482A29EB172F419609811B78D19A /* Pods-Ui Assignment-dummy.m in Sources */,
+				48C8E5E0E2D23BEA61604383B9E0F10A /* TPKeyboardAvoidingSwift-dummy.m in Sources */,
+				B61B62C47C6633DA017401700EC95665 /* TPKeyboardAvoidingSwift.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC4F11F016FC2AF9ED34566E8A6DC2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B5EBF38219913BC678F41776ED15B74 /* Pods-Ui Assignment-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		92C4EE4E28FAB4AEB56C009A900E8F9F /* PBXTargetDependency */ = {
+		3B3FD53BCD0A8DCD3093F59E06D29F3B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CarbonKit;
 			target = AF9228424A074D42F13FABA26E972B57 /* CarbonKit */;
-			targetProxy = FDB43FB4DA5754838A3591A74722B650 /* PBXContainerItemProxy */;
+			targetProxy = 8A8BE6FAD2B3B92745D068CDE1955861 /* PBXContainerItemProxy */;
+		};
+		3C3812B1D054FA898A8D54749D6E919E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPKeyboardAvoidingSwift;
+			target = 997BD0C6C6E9A7EF79DD4AA760E75C8E /* TPKeyboardAvoidingSwift */;
+			targetProxy = C7A97D42C938E920478E5AC3F20506C5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		27C5471DE383530F2FBBE8904D5BBB02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E941A28A88272B62F05428C04C7B7C4 /* Pods-Ui Assignment.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Ui Assignment/Pods-Ui Assignment-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ui Assignment/Pods-Ui Assignment.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		3C73BDAC02BF6A4D61D6D97D384D8842 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -393,7 +533,7 @@
 		};
 		7A2771C7C179BDF793FA74D15C602968 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B13F8B682638504257F4BB9A4D21161B /* CarbonKit.xcconfig */;
+			baseConfigurationReference = CE8CE6BE51ED1F30B84DA71F27D610F4 /* CarbonKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -427,7 +567,7 @@
 			};
 			name = Release;
 		};
-		9BFF7A9B979538B8931B62228689C741 /* Debug */ = {
+		94B7BC76528714057E42EFD9B4A85E3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 375CCF6D0477A5D18A8EA4CA1679917F /* Pods-Ui Assignment.debug.xcconfig */;
 			buildSettings = {
@@ -459,6 +599,42 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9DFD2E26DA63BB9F53BE4A4C8CFC16E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E67374982E69C43971D7F33F2595061D /* TPKeyboardAvoidingSwift.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoidingSwift/TPKeyboardAvoidingSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoidingSwift/TPKeyboardAvoidingSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoidingSwift/TPKeyboardAvoidingSwift.modulemap";
+				PRODUCT_MODULE_NAME = TPKeyboardAvoidingSwift;
+				PRODUCT_NAME = TPKeyboardAvoidingSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -531,7 +707,7 @@
 		};
 		C5CA0B635D19C7F6BCAFD15F9108809D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B13F8B682638504257F4BB9A4D21161B /* CarbonKit.xcconfig */;
+			baseConfigurationReference = CE8CE6BE51ED1F30B84DA71F27D610F4 /* CarbonKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -564,11 +740,10 @@
 			};
 			name = Debug;
 		};
-		D9992B7760BAB2518DFF06EDF2ABC9FF /* Release */ = {
+		D27B79154865FADF0D306185AD3C4B36 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E941A28A88272B62F05428C04C7B7C4 /* Pods-Ui Assignment.release.xcconfig */;
+			baseConfigurationReference = E67374982E69C43971D7F33F2595061D /* TPKeyboardAvoidingSwift.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -579,23 +754,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Ui Assignment/Pods-Ui Assignment-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoidingSwift/TPKeyboardAvoidingSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoidingSwift/TPKeyboardAvoidingSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Ui Assignment/Pods-Ui Assignment.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoidingSwift/TPKeyboardAvoidingSwift.modulemap";
+				PRODUCT_MODULE_NAME = TPKeyboardAvoidingSwift;
+				PRODUCT_NAME = TPKeyboardAvoidingSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -606,11 +780,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B9E10E3FEAF53CF501977385777B39B /* Build configuration list for PBXNativeTarget "Pods-Ui Assignment" */ = {
+		085ABC34EEBE6C16A8698F5A3455A817 /* Build configuration list for PBXNativeTarget "Pods-Ui Assignment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9BFF7A9B979538B8931B62228689C741 /* Debug */,
-				D9992B7760BAB2518DFF06EDF2ABC9FF /* Release */,
+				94B7BC76528714057E42EFD9B4A85E3E /* Debug */,
+				27C5471DE383530F2FBBE8904D5BBB02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -620,6 +794,15 @@
 			buildConfigurations = (
 				AB09B621ED251839D4FA17E44F361111 /* Debug */,
 				3C73BDAC02BF6A4D61D6D97D384D8842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDE9FF29B624AAF9C9BD1203C7C3D3D /* Build configuration list for PBXNativeTarget "TPKeyboardAvoidingSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DFD2E26DA63BB9F53BE4A4C8CFC16E9 /* Debug */,
+				D27B79154865FADF0D306185AD3C4B36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

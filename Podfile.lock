@@ -1,16 +1,20 @@
 PODS:
   - CarbonKit (2.3.1)
+  - TPKeyboardAvoidingSwift (3.2)
 
 DEPENDENCIES:
   - CarbonKit
+  - TPKeyboardAvoidingSwift
 
 SPEC REPOS:
   trunk:
     - CarbonKit
+    - TPKeyboardAvoidingSwift
 
 SPEC CHECKSUMS:
   CarbonKit: b60e24dbdb47179990d5e074efa87ab819c8de98
+  TPKeyboardAvoidingSwift: ce1a75e0bc3af6b485f8bfa1d0a8320cfc565851
 
-PODFILE CHECKSUM: fa1d35ac8589d6223a1efa2be0cc75fc786d14b2
+PODFILE CHECKSUM: 4d9eda1764c6c14a4af128a718daf58eeff6ab9f
 
 COCOAPODS: 1.8.4

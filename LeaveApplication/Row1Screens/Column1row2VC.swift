@@ -6,13 +6,16 @@
 //
 
 import UIKit
-
+import TPKeyboardAvoidingSwift
 class Column1row2VC: UIViewController {
 
     
     @IBAction func backbutton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+    
+    
+    @IBOutlet weak var scrollCredentials: TPKeyboardAvoidingCollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

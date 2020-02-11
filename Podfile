@@ -8,5 +8,6 @@ target 'Ui Assignment' do
   # Pods for Ui Assignment
 use_frameworks!
 pod 'CarbonKit'
+pod "TPKeyboardAvoidingSwift" 
 
 end
