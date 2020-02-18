@@ -188,7 +188,7 @@ class ViewController: UIViewController{
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-       ViewBackground.isHidden = true
+       //ViewBackground.isHidden = true
     }
     
     

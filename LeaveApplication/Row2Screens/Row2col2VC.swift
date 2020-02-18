@@ -31,6 +31,8 @@ class Row2col2VC: UIViewController {
     @IBAction func signupbuttn(_ sender: Any) {
        // if signup.isSelected == false{
            // signup.setTitleColor(UIColor.lightGray, for: .normal)
+        uploadimage.layer.cornerRadius = uploadimage.frame.width/2
+        uploadimage.clipsToBounds = true
         backview1.isHidden = false
         backview2.isHidden = true
            // signup.isSelected = true
@@ -43,10 +45,11 @@ class Row2col2VC: UIViewController {
     }
     
     @IBAction func signinbuttn(_ sender: Any) {
+        uploadimage.isHidden = true
         backview1.isHidden = true
         backview2.isHidden = false
-        uploadimage.layer.cornerRadius = uploadimage.frame.width/2
-        uploadimage.clipsToBounds = true
+       // uploadimage.layer.cornerRadius = uploadimage.frame.width/2
+        //uploadimage.clipsToBounds = true
         loadView()
     }
     override func viewWillAppear(_ animated: Bool) {

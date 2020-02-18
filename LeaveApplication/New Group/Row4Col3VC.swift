@@ -61,10 +61,10 @@ class Row4Col3VC: UIViewController {
             imageviewCentered.isHidden = false
             signinwithfbButton.isHidden = false
             
-            var lineView = UIView(frame: CGRect(x: 9, y: 531, width: 359, height: 2.0))
-            lineView.layer.borderWidth = 1.0
-            lineView.layer.borderColor = UIColor.lightGray.cgColor
-            self.view.addSubview(lineView)
+//            var lineView = UIView(frame: CGRect(x: 9, y: 531, width: 359, height: 2.0))
+//            lineView.layer.borderWidth = 1.0
+//            lineView.layer.borderColor = UIColor.lightGray.cgColor
+//            self.view.addSubview(lineView)
             
             signupView.isHidden = true
             fullnameTxtfld.isHidden = true

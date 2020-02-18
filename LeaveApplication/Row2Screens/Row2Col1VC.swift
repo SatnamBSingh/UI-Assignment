@@ -18,6 +18,7 @@ class Row2Col1VC: UIViewController {
     @IBAction func indexChanged(_ sender: UISegmentedControl) {
         switch segmentedControl.selectedSegmentIndex {
             case 0:
+            signinView.isHidden = true
             signupview.isHidden = false
             fullnametxtfld.isHidden = false
             lastnametxtfld.isHidden = false
