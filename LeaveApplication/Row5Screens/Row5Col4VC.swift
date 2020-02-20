@@ -175,7 +175,6 @@ class Row5Col4VC: UIViewController {
                         self.fullnameSignup.alpha -= 0.25
                         self.signUpbutton.alpha -= 0.25
                         //self.passwordSignup.alpha -= 0.1
-                        self.signUpCredentialsView.layoutIfNeeded()
                         
                     }
                     panGestureRecognizer.setTranslation(CGPoint.zero, in: self.view)
@@ -183,8 +182,17 @@ class Row5Col4VC: UIViewController {
                 else {
                     
                     self.signUpCredentialsView.frame.origin.y += translation.y
-                self.desiredSignInView()
-                    
+                //self.desiredSignInView()
+                    self.signinViewCredentials.frame = CGRect(x: 45, y: 136, width: 285, height: 449)
+                    self.signinLabel.frame = CGRect(x: 100, y: 5, width: 100, height: 22)
+                    self.signinUsername.frame = CGRect(x: 10, y: 120, width: 260, height: 44)
+                    self.signinPassword.frame = CGRect(x: 10, y: 170, width: 260, height: 44)
+                    self.remembermelLabel.frame = CGRect(x: 30, y: 230, width: 260, height: 44)
+                    self.forgotpasswordButton.frame = CGRect(x: 80, y: 230, width: 260, height: 44)
+                    self.signinmageView.frame = CGRect(x: 100, y: 25, width: 80, height: 80)
+                    self.remembermeButton.frame = CGRect(x: 10, y: 240, width: 22, height: 22)
+                    self.signinButton.frame = CGRect(x: 10, y: 280, width: 260, height: 44)
+                    self.signinwithfbButton.frame = CGRect(x: 10, y: 340, width: 260, height: 44)
                     panGestureRecognizer.setTranslation(CGPoint.zero, in: self.view)
                     
                     //                    self.signUpCredentialsView.frame = CGRect(x: 8, y: 163, width: 359, height: 476)
@@ -196,16 +204,7 @@ class Row5Col4VC: UIViewController {
                     //                    self.signUpbutton.frame = CGRect(x: 15, y: 350, width: 329, height: 44)
                     //                    self.signupwithfbButton.frame = CGRect(x: 15, y: 400, width: 329, height: 44)
                     
-                    self.signinViewCredentials.frame = CGRect(x: 45, y: 136, width: 285, height: 449)
-                    self.signinLabel.frame = CGRect(x: 100, y: 5, width: 100, height: 22)
-                    self.signinUsername.frame = CGRect(x: 10, y: 120, width: 260, height: 44)
-                    self.signinPassword.frame = CGRect(x: 10, y: 170, width: 260, height: 44)
-                    self.remembermelLabel.frame = CGRect(x: 30, y: 230, width: 260, height: 44)
-                    self.forgotpasswordButton.frame = CGRect(x: 80, y: 230, width: 260, height: 44)
-                    self.signinmageView.frame = CGRect(x: 100, y: 25, width: 80, height: 80)
-                    self.remembermeButton.frame = CGRect(x: 10, y: 240, width: 22, height: 22)
-                    self.signinButton.frame = CGRect(x: 10, y: 280, width: 260, height: 44)
-                    self.signinwithfbButton.frame = CGRect(x: 10, y: 340, width: 260, height: 44)
+                    
                 }
             }
             
@@ -222,7 +221,7 @@ class Row5Col4VC: UIViewController {
                     if (self.signinViewCredentials.frame.origin.y - ((self.originalSignInViewRect?.origin.y)!) >= 100)  {
                         
                         //CurveEaseIn- the animation to begin slowly, and then speed up as it progresses.
-                        UIView.animate(withDuration: 0.5, delay: 0, options: [.curveEaseIn], animations: {
+                        UIView.animate(withDuration: 0.7, delay: 0, options: [.curveEaseIn], animations: {
                             
                             self.desiredSignUpView()
                             self.signUpCredentialsView.frame.origin.y += (self.originalSignUpViewRect!.origin.y-self.signUpCredentialsView.frame.origin.y)
@@ -230,15 +229,24 @@ class Row5Col4VC: UIViewController {
                             //Completion- It gets passed to a function as an argument and then called when that function is done.
                         }, completion: { (action) in
                             self.signinViewCredentials.alpha = 0
-                            UIView.animate(withDuration: 0.5, delay: 0, options: [.curveEaseInOut], animations: {
-                                self.signUpCredentialsView.layoutIfNeeded()
+                            UIView.animate(withDuration: 0.7, delay: 0, options: [.curveEaseInOut], animations: {
                                 
                             }, completion: { (action) in
-                                self.signinViewCredentials.frame = self.originalSignInViewRect!
-                                self.desiredSignInView()
+                                //self.signinViewCredentials.frame = self.originalSignInViewRect!
+                                self.signinViewCredentials.frame = CGRect(x: 45, y: 136, width: 285, height: 449)
+                                self.signinLabel.frame = CGRect(x: 100, y: 45, width: 100, height: 22)
+                                self.signinUsername.frame = CGRect(x: 10, y: 140, width: 260, height: 44)
+                                self.signinPassword.frame = CGRect(x: 10, y: 190, width: 260, height: 44)
+                                self.remembermelLabel.frame = CGRect(x: 30, y: 250, width: 260, height: 44)
+                                self.forgotpasswordButton.frame = CGRect(x: 80, y: 250, width: 260, height: 44)
+                                self.signinmageView.frame = CGRect(x: 100, y: 50, width: 80, height: 80)
+                                self.remembermeButton.frame = CGRect(x: 10, y: 260, width: 22, height: 22)
+                                self.signinButton.frame = CGRect(x: 10, y: 300, width: 260, height: 44)
+                                self.signinwithfbButton.frame = CGRect(x: 10, y: 360, width: 260, height: 44)
+                             //   self.desiredSignInView()
                                 
                                 //CurveEaseInOut- the animation to begin slowly, accelerate through the middle of its duration, and then slow again before completing.
-                                UIView.animate(withDuration: 0.5, delay: 0, options: [.curveEaseInOut], animations: {
+                                UIView.animate(withDuration: 0.7, delay: 0, options: [.curveEaseInOut], animations: {
                                     self.signinViewCredentials.alpha = 1
                                 }, completion: nil)
                             })
@@ -252,7 +260,6 @@ class Row5Col4VC: UIViewController {
                         self.fullnameSignup.alpha = 0
                         self.signUpbutton.alpha = 0
                         //self.passwordSignup.alpha = 0
-                        self.signUpCredentialsView.layoutIfNeeded()
                     }
                     
                     //                    self.signinUsername.isHidden = true
@@ -264,12 +271,21 @@ class Row5Col4VC: UIViewController {
                     //                    self.remembermelLabel.isHidden = true
                     //                    self.signinmageView.isHidden = true
                     //                    self.signinLabel.isHidden = true
-                    self.desiredSignUpView()
-                    
+                    //self.desiredSignUpView()
+                    self.signinViewCredentials.frame = CGRect(x: 45, y: 136, width: 285, height: 449)
+                    self.signUpCredentialsView.frame = CGRect(x: 8, y: 180, width: 359, height: 476)
+                    self.signupLabel.frame = CGRect(x: 143, y: 20, width: 80, height: 30)
+                    self.fullnameSignup.frame = CGRect(x: 15, y: 100, width: 329, height: 44)
+                    self.lastnameSignup.frame = CGRect(x: 15, y: 150, width: 329, height: 44)
+                    self.emailSignup.frame = CGRect(x: 15, y: 200, width: 329, height: 44)
+                    self.passwordSignup.frame = CGRect(x: 15, y: 250, width: 329, height: 44)
+                    self.reenterpasswrdSignup.frame = CGRect(x: 15, y: 300, width: 329, height: 44)
+                    self.signUpbutton.frame = CGRect(x: 15, y: 350, width: 329, height: 44)
+                    self.signupwithfbButton.frame = CGRect(x: 15, y: 400, width: 329, height: 44)
                 }else{
                     if (self.signUpCredentialsView.frame.origin.y - (self.originalSignUpViewRect?.origin.y)! >= 100)  {
                         self.view.bringSubview(toFront: self.signinViewCredentials)
-                        UIView.animate(withDuration: 0.5, delay: 0, options: [.curveEaseInOut], animations: {
+                        UIView.animate(withDuration: 0.7, delay: 0, options: [.curveEaseInOut], animations: {
                             // self.view.bringSubview(toFront: self.signupview)
                             self.desiredSignInView()
                             self.view.bringSubview(toFront: self.signinViewCredentials)
@@ -291,16 +307,15 @@ class Row5Col4VC: UIViewController {
                            // self.signUpCredentialsView.alpha = 0
                             self.view.sendSubview(toBack: self.signUpCredentialsView)
                             self.view.bringSubview(toFront: self.signinViewCredentials)
-                            UIView.animate(withDuration: 0.5, delay: 0, options: [.curveEaseInOut], animations: {
+                            UIView.animate(withDuration: 0.7, delay: 0, options: [.curveEaseInOut], animations: {
                                 self.signinViewCredentials.backgroundColor = UIColor.white
                                 
                                
                             }, completion: { (action) in
                                 self.desiredSignInView()
-                                UIView.animate(withDuration: 0.5, delay: 0, options: [.curveEaseInOut], animations: {
+                                UIView.animate(withDuration: 0.7, delay: 0, options: [.curveEaseInOut], animations: {
                                     self.signinViewCredentials.alpha = 1
                                     self.desiredSignUpView()
-                                    self.view.layoutIfNeeded()
                                 }, completion: nil)
                                 
                             })

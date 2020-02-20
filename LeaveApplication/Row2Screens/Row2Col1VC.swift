@@ -11,13 +11,12 @@ class Row2Col1VC: UIViewController {
 
     @IBOutlet var signupview: UIView!
     @IBOutlet var segmentedControl: UISegmentedControl!
-    
-    
     @IBOutlet weak var signinView: UIView!
     
     @IBAction func indexChanged(_ sender: UISegmentedControl) {
         switch segmentedControl.selectedSegmentIndex {
             case 0:
+            segmentedControl.backgroundColor = UIColor.white
             signinView.isHidden = true
             signupview.isHidden = false
             fullnametxtfld.isHidden = false
