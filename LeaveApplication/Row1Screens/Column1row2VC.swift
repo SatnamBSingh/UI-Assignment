@@ -25,7 +25,7 @@ class Column1row2VC: UIViewController {
         self.navigationController!.navigationBar.barStyle = .blackTranslucent
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.isHidden = true
-navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
     

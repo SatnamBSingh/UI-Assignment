@@ -25,7 +25,7 @@ class Row5Col3VC: UIViewController {
         signinCredentials.layer.shadowColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         signinCredentials.layer.shadowOffset = CGSize(width: 1, height: 1)
         signinCredentials.layer.shadowOpacity = 1.0
-     navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
     

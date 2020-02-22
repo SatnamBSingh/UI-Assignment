@@ -38,10 +38,10 @@ class Row5Col1MainVC: UIViewController, CarbonTabSwipeNavigationDelegate{
         let displays = ["SIGN UP", "SIGN IN"]
         let carbonswipenavigation = CarbonTabSwipeNavigation(items: displays, delegate: self)
         carbonswipenavigation.insert(intoRootViewController: self, andTargetView: containerView)
-        carbonswipenavigation.setTabBarHeight(70)
+        carbonswipenavigation.setTabBarHeight(50)
         //below for bar color&Height
         carbonswipenavigation.setIndicatorColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
-        carbonswipenavigation.setIndicatorHeight(7)
+        carbonswipenavigation.setIndicatorHeight(3)
         carbonswipenavigation.toolbar.barTintColor = #colorLiteral(red: 0.9915205836, green: 0.3439395428, blue: 0.1324428618, alpha: 1)
         carbonswipenavigation.toolbar.isTranslucent = false
         // carbonswipenavigation.toolbar.barPosition
@@ -55,7 +55,7 @@ class Row5Col1MainVC: UIViewController, CarbonTabSwipeNavigationDelegate{
         //self.containerView = carbonswipenavigation.view
         
         navigationController?.navigationBar.isHidden = true
-
+        
         // Do any additional setup after loading the view.
     }
     

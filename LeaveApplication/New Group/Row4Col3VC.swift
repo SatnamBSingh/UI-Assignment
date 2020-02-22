@@ -38,7 +38,7 @@ class Row4Col3VC: UIViewController {
     @IBAction func indexChanged(_ sender: Any) {
         switch segmenrtedControl.selectedSegmentIndex {
         case 0:
-
+            
             signupView.isHidden = false
             fullnameTxtfld.isHidden = false
             lastnameTxtfld.isHidden = false
@@ -46,7 +46,7 @@ class Row4Col3VC: UIViewController {
             passowrdTxtfld.isHidden = false
             confirmpasswordTxtfld.isHidden = false
             remembermeButton.isHidden = true
-          
+            
             
         case 1:
             signInView.isHidden = false
@@ -61,10 +61,10 @@ class Row4Col3VC: UIViewController {
             imageviewCentered.isHidden = false
             signinwithfbButton.isHidden = false
             
-//            var lineView = UIView(frame: CGRect(x: 9, y: 531, width: 359, height: 2.0))
-//            lineView.layer.borderWidth = 1.0
-//            lineView.layer.borderColor = UIColor.lightGray.cgColor
-//            self.view.addSubview(lineView)
+            //            var lineView = UIView(frame: CGRect(x: 9, y: 531, width: 359, height: 2.0))
+            //            lineView.layer.borderWidth = 1.0
+            //            lineView.layer.borderColor = UIColor.lightGray.cgColor
+            //            self.view.addSubview(lineView)
             
             signupView.isHidden = true
             fullnameTxtfld.isHidden = true
@@ -92,7 +92,7 @@ class Row4Col3VC: UIViewController {
         self.navigationController!.navigationBar.tintColor = UIColor.white
         self.navigationController!.navigationBar.barStyle = .blackTranslucent
         navigationController?.navigationBar.isHidden = true
-      
+        
         
         signupView.isHidden = true
         fullnameTxtfld.isHidden = true

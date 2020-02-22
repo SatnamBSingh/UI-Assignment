@@ -13,13 +13,13 @@ class Row4Col1VC: UIViewController {
 
     
     @IBAction func remembermeButton(_ sender: Any) {
-            rememberMe.toggle()
+        rememberMe.toggle()
         
-            if rememberMe{
-                (sender as AnyObject).setImage(UIImage(named: "icons8-tick-box-20"), for: .normal)
-            }else {
-                (sender as AnyObject).setImage(UIImage(named: "icons8-tick-box-20"), for: .normal)
-            }
+        if rememberMe{
+            (sender as AnyObject).setImage(UIImage(named: "icons8-tick-box-20"), for: .normal)
+        }else {
+            (sender as AnyObject).setImage(UIImage(named: "icons8-tick-box-20"), for: .normal)
+        }
     }
     
     @IBAction func backbutton(_ sender: Any) {
@@ -34,7 +34,7 @@ class Row4Col1VC: UIViewController {
         navigationController?.navigationBar.isHidden = true
         usernameTxtfld.attributedPlaceholder = NSAttributedString(string: "Username", attributes:[NSAttributedStringKey.foregroundColor: UIColor.white])
         passwordTxtfld.attributedPlaceholder = NSAttributedString(string: "Password", attributes:[NSAttributedStringKey.foregroundColor: UIColor.white])
-       // usernameTxtfld.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        // usernameTxtfld.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         //passwordTxtfld.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         // Do any additional setup after loading the view.
     }

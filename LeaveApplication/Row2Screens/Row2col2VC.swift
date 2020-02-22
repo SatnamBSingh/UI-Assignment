@@ -47,10 +47,10 @@ class Row2col2VC: UIViewController {
     }
     
     @IBAction func signinbuttn(_ sender: Any) {
-        signin.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .selected)
-        signin.setTitleColor(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), for: .disabled)
+        signin.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: UIControlState.selected)
+        signin.setTitleColor(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), for: UIControlState.disabled)
 
-        uploadimage.isHidden = true
+        self.uploadimage.isHidden = true
         backview1.isHidden = true
         backview2.isHidden = false
        // uploadimage.layer.cornerRadius = uploadimage.frame.width/2

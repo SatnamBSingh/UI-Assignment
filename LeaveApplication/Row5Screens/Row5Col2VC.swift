@@ -27,7 +27,7 @@ class Row5Col2VC: UIViewController {
         credentialsView.layer.shadowOffset = CGSize(width: 1, height: 1)
         credentialsView.layer.shadowOpacity = 1.0
         
-navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
     

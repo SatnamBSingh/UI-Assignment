@@ -26,7 +26,7 @@ class Row6Col2VC: UIViewController {
         self.navigationController!.navigationBar.tintColor = UIColor.white
         self.navigationController!.navigationBar.barStyle = .blackTranslucent
         navigationController?.navigationBar.isHidden = true
-navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
     

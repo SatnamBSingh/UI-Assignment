@@ -28,7 +28,7 @@ class Row6Col1VC: UIViewController {
         signupCredentials.layer.shadowOffset = CGSize(width: 1, height: 1)
         signupCredentials.layer.shadowOpacity = 1.0
         
-   navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
     

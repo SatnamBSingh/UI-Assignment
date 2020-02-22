@@ -17,7 +17,7 @@ class Row6Col4VC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
         self.navigationController!.navigationBar.isTranslucent = false
         self.navigationController!.navigationBar.isTranslucent = false
         self.navigationController!.navigationBar.tintColor = UIColor.white

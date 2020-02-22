@@ -16,25 +16,26 @@ class Row2Col1VC: UIViewController {
     @IBAction func indexChanged(_ sender: UISegmentedControl) {
         switch segmentedControl.selectedSegmentIndex {
             case 0:
-            segmentedControl.backgroundColor = UIColor.white
-            signinView.isHidden = true
+
+//            segmentedControl.backgroundColor = UIColor.white
+            self.signinView.isHidden = true
             signupview.isHidden = false
             fullnametxtfld.isHidden = false
             lastnametxtfld.isHidden = false
             emailtxtfld.isHidden = false
             passwordtxtfld.isHidden = false
             reenterpasswrdtxtfld.isHidden = false
-            self.loadView()
+           // self.loadView()
             
            case 1:
-            signinView.isHidden = false
-            fullnametxtfld.isHidden = true
-            passwordtxtfld.isHidden = true
-            lastnametxtfld.isHidden = true
-            emailtxtfld.isHidden = true
-            reenterpasswrdtxtfld.isHidden = true
-            createaccntbutton.isHidden = true
-            signwithfbbttn.isHidden = true
+            self.signinView.isHidden = false
+//            fullnametxtfld.isHidden = true
+//            passwordtxtfld.isHidden = true
+//            lastnametxtfld.isHidden = true
+//            emailtxtfld.isHidden = true
+//            reenterpasswrdtxtfld.isHidden = true
+//            createaccntbutton.isHidden = true
+//            signwithfbbttn.isHidden = true
     
             
         default:

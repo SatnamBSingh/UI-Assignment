@@ -46,7 +46,7 @@ class Row4Col4VC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-    signupView.isHidden = true
+        signupView.isHidden = true
         self.navigationController!.navigationBar.isTranslucent = false
         self.navigationController!.navigationBar.isTranslucent = false
         self.navigationController!.navigationBar.tintColor = UIColor.white

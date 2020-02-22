@@ -20,7 +20,7 @@ class Row3Col4VC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
     

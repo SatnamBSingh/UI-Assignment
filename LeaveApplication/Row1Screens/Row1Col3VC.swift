@@ -25,7 +25,7 @@ class Row1Col3VC: UIViewController {
         self.navigationController!.navigationBar.barStyle = .blackTranslucent
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.isHidden = true
-navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
      //   myTextField.attributedPlaceholder = NSAttributedString(string: "placeholder text",attributes: [NSForegroundColorAttributeName: UIColor.yellow])
         
         fullnametxtfld.attributedPlaceholder = NSAttributedString(string: "Fullname", attributes:[NSAttributedStringKey.foregroundColor: UIColor.white])
