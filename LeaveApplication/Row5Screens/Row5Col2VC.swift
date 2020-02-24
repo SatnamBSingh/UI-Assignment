@@ -26,8 +26,8 @@ class Row5Col2VC: UIViewController {
         credentialsView.layer.shadowColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         credentialsView.layer.shadowOffset = CGSize(width: 1, height: 1)
         credentialsView.layer.shadowOpacity = 1.0
-        
         navigationController?.navigationBar.isHidden = true
+       // self.view.endEditing(true)
         // Do any additional setup after loading the view.
     }
     
