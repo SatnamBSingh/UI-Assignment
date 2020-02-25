@@ -12,7 +12,6 @@ class Screen1Row1VC: UIViewController {
     
     
     @IBOutlet var imageviewscreen1: UIImageView!
-    
     @IBOutlet var scrollview: UIScrollView!
     @IBAction func backbutton(_ sender: Any) {
         navigationController?.popViewController(animated: true)

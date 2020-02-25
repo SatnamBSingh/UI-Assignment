@@ -66,7 +66,8 @@ class Row2Col1VC: UIViewController {
         navigationController?.navigationBar.isHidden = true
         let titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black]
         UISegmentedControl.appearance().setTitleTextAttributes(titleTextAttributes, for: .selected)
-        
+        let backcolor = [NSAttributedStringKey.foregroundColor: UIColor.gray]
+        UISegmentedControl.appearance().setTitleTextAttributes(backcolor, for: .normal)
        
         //segmentcontroloutlet.tintColor = UIColor.clear
         //segmentcontroloutlet.backgroundColor = UIColor.lightGray

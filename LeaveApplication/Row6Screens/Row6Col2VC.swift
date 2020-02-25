@@ -27,6 +27,10 @@ class Row6Col2VC: UIViewController {
         self.navigationController!.navigationBar.barStyle = .blackTranslucent
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.isHidden = true
+        let titleText = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        let backcolor = [NSAttributedStringKey.foregroundColor: UIColor.black]
+        UISegmentedControl.appearance().setTitleTextAttributes(titleText, for: .selected)
+        UISegmentedControl.appearance().setTitleTextAttributes(backcolor, for: .normal)
         // Do any additional setup after loading the view.
     }
     

@@ -54,8 +54,8 @@ class Row1Col4VC: UIViewController, CarbonTabSwipeNavigationDelegate {
         carbonswipenavigation.toolbar.isTranslucent = false
        // carbonswipenavigation.toolbar.barPosition
        // carbonswipenavigation.toolbar.backgroundColor = UIColor.clear
-        carbonswipenavigation.carbonSegmentedControl?.setWidth(170, forSegmentAt: 0)
-        carbonswipenavigation.carbonSegmentedControl?.setWidth(170, forSegmentAt: 1)
+        carbonswipenavigation.carbonSegmentedControl?.setWidth(190, forSegmentAt: 0)
+        carbonswipenavigation.carbonSegmentedControl?.setWidth(190, forSegmentAt: 1)
         //below for unselected text the color is white
         carbonswipenavigation.setNormalColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
         carbonswipenavigation.setSelectedColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
